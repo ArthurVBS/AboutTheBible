@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.sect-Organization{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sect-Organization .index{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 24px;
+}
+
+.sect-Organization .index a{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  opacity: 0.75;
+  transition: all .5s;
+}
+
+.sect-Organization .index .bar{
+  color: #202026;
+  font-size: 2em;
+}
+
+.sect-Organization .index a .details{
+  transition: all .5s;
+}
+
+.sect-Organization .index a:nth-child(1):hover .details{
+  color: #80EE60;
+}
+
+.sect-Organization .index a:nth-child(3):hover .details{
+  color: #7244DD;
+}
+
+.sect-Organization .index a:hover{
+  opacity: 1;
+}
+
+.sect-Organization .testament{
+  border-top: 1px solid #202026;
+  padding: 24px;
+}
+
+.sect-Organization .testament .title{
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.4em;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.sect-Organization .testament .title::before{
+  content: '>';
+  margin-right: 4px;
+}
+
+.sect-Organization .testament#oldTestament .title::before{
+  color: #80EE60;
+}
+
+.sect-Organization .testament#newTestament .title::before{
+  color: #7244DD;
+}

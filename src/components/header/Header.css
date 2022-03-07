@@ -32,10 +32,15 @@
 }
 
 .header .navigation .link{
+  background-color: transparent;
   color: #CCC;
+  cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
   padding: 8px;
+  border: none;
   transition: all .5s;
 }
 
