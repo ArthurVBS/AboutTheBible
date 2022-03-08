@@ -3,6 +3,7 @@
 .header{
   background-color: #202026;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 16px;
 }

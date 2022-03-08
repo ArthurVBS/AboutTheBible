@@ -11,7 +11,6 @@ export default function Card(props) {
 
       
       <p className='cardParagraph'>
-        {testament === 'old' ? <i className="fas fa-star-of-david cardIcon"></i> : <i className="fas fa-cross cardIcon"></i>}
         {props.children}
       </p>
 
