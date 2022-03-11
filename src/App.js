@@ -1,8 +1,7 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 
 import Header from './components/header/Header'
-import About from './components/about/About'
-import Organization from './components/organization/Organization'
+import Main from './components/main/Main'
 import Footer from './components/footer/Footer'
 
 import { ThemeProvider } from 'styled-components'
@@ -16,9 +15,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header showContainer={showContainer} setShowContainer={setShowContainer} />
-
-      {showContainer === 'about' ? <About /> : <Organization />}
-
+      <Main showContainer={showContainer} />
       <Footer />
     </ThemeProvider>
   )

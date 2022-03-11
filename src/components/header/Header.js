@@ -42,7 +42,7 @@ export default function Header(props) {
         <div className='buttonWrapper'>
           <button id='about' className='buttonItem' onClick={() => handleClick('about')}>About</button>
           <button id='organization' className='buttonItem selected' onClick={() => handleClick('organization')}>Organization</button>
-          <button id='books' className='buttonItem' onClick={() => console.log('Wait... In progress')}>Books</button>
+          <button id='books' className='buttonItem' onClick={() => handleClick('books')}>Books</button>
         </div>
 
         <div className='linkWrapper'>
