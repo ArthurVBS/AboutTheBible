@@ -10,14 +10,14 @@ import GlobalStyles from './styles/globalStyles'
 import { theme } from './styles/theme'
 
 export default function App() {
-  const [showContainer, setShowContainer] = useState('About')
+  const [showContainer, setShowContainer] = useState('organization')
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header showContainer={showContainer} setShowContainer={setShowContainer} />
 
-      {showContainer === 'About' ? <About /> : <Organization />}
+      {showContainer === 'about' ? <About /> : <Organization />}
 
       <Footer />
     </ThemeProvider>
