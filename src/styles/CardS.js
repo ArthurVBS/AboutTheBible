@@ -1,15 +1,24 @@
 import styled from 'styled-components'
 
+export const ContainerCardS = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
+`
+
 export const CardS = styled.div`
   background-color: ${(props) => props.theme.neutral};
   color: white;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: 16px;
+  gap: 24px;
   max-width: 768px;
   border-radius: 8px;
-  padding: 16px;
+  padding: 24px;
   border-bottom: 1px solid ${(props) => props.theme.primaryColor};
   
   h2{
@@ -20,24 +29,6 @@ export const CardS = styled.div`
 
   p{
     text-align: center;
-  }
-  
-  h5{
-    background-color: ${(props) => (props.theme.background)};
-    text-align: center;
-    font-size: 1em;
-    font-weight: 500;
     letter-spacing: 1px;
-    padding: 8px;
-    border-radius: 20px;
   }
-
-  h5:nth-child(1) i, h5:nth-child(3) i{
-    color: ${(props) => (props.theme.secondaryColor)};
-  }
-  
-  h5:nth-child(2) i, h5:nth-child(4) i{
-    color: ${(props) => (props.theme.primaryColor)};
-  }
-
 `

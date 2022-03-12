@@ -7,7 +7,6 @@ export default function Card(props) {
   return (
     <div className={'card ' + testament}>
       <h2 className='cardTitle'> {props.name}</h2>
-
       
       <p className='cardParagraph'>
         {props.children}
