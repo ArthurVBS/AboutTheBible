@@ -1,25 +1,24 @@
-import './Card.css'
+import { StyledCard, StyledDetails, StyledBooksContainer, StyledBooks } from '../../styles/StyledCard'
 
 export default function Card(props) {
   const books = props.books
   const testament = props.testament
 
   return (
-    <div className={'card ' + testament}>
-      <h2 className='cardTitle'> {props.name}</h2>
-      
-      <p className='cardParagraph'>
-        {props.children}
-      </p>
+    <StyledCard color={testament === 'new' ? 'primary' : 'secondary'}>
+      <h2> {props.name}</h2>
+      <p>{props.children}</p>
 
-      <details className='cardDetails'>
-        <summary className='cardSummary'>See the Books</summary>
-        <div className='bookWrapper'>
+      <StyledDetails color={testament === 'new' ? 'primary' : 'secondary'}>
+        <summary>See the Books</summary>
+
+        <StyledBooksContainer>
           {books.map((book, i) => (
-            <h5 key={i} className='bookItem'>{book}</h5>
+            <StyledBooks key={i}>{book}</StyledBooks>
           ))}
-        </div>
-      </details>
-    </div>
+        </StyledBooksContainer>
+
+      </StyledDetails>
+    </StyledCard>
   )
 }

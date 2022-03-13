@@ -1,18 +1,17 @@
-import React from 'react'
-import './Organization.css'
+import { StyledSectionOrganization, StyledDivIndex, StyledSectionTestament } from '../../styles/StyledSection'
 import Card from '../card/Card'
 
 export default function Organization() {
   return (
-    <section className='sect-Organization'>
-      <div className='index'>
-        <a href='#oldTestament'><span className='details'>Old</span> Testament</a>
-        <span className='bar'>|</span>
-        <a href='#newTestament'><span className='details'>New</span> Testament</a>
-      </div>
+    <StyledSectionOrganization>
+      <StyledDivIndex>
+        <a href='#oldTestament'><span>Old</span> Testament</a>
+        <span>|</span>
+        <a href='#newTestament'><span>New</span> Testament</a>
+      </StyledDivIndex>
 
-      <section className='testament' id='oldTestament'>
-        <h1 className='title'>Old Testament</h1>
+      <StyledSectionTestament id='oldTestament' color={'secondary'}>
+        <h1>Old Testament</h1>
 
         <Card testament='old' name='Pentateuch' books={['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy']}>
           The Pentateuch is composed of the first 5 books of the Bible. These are part of the Torah, the Book of the Law for the Jews. All are arranged in chronological order.
@@ -33,10 +32,10 @@ export default function Organization() {
         <Card testament='old' name='Minor Prophets' books={['Hosea', 'Joel', 'Amos', 'Obadiah', 'Jonah', 'Micah', 'Nahum', 'Habakkuk', 'Zephaniah', 'Haggai', 'Zechariah', 'Malachi']}>
           The books of the minor prophets have fewer chapters than the books of the major prophets.
         </Card>
-      </section>
+      </StyledSectionTestament>
       
-      <section className='testament' id='newTestament'>
-        <h1 className='title'>New Testament</h1>
+      <StyledSectionTestament id='newTestament' color={'primary'}>
+        <h1>New Testament</h1>
 
         <Card testament='new' name='Gospels' books={['Matthew', 'Mark', 'Luke', 'John']}>
           The 4 Gospels recount the birth, ministry, death, resurrection and ascension of Jesus.
@@ -57,7 +56,7 @@ export default function Organization() {
         <Card testament='new' name='Apocalyptic Literature' books={['Revelation']}>
           Revelation of Jesus&#39; return.
         </Card>
-      </section>
-    </section>
+      </StyledSectionTestament>
+    </StyledSectionOrganization>
   )
 }

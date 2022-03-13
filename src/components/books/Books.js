@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { CardS, ContainerCardS } from "../../styles/CardS"
-import { TitleS } from "../../styles/TitleS"
-import { ButtonS, ContainerButtonS } from '../../styles/ButtonS'
-import { BoxInfoS, ContainerBoxInfoS } from "../../styles/BoxInfoS"
+import { StyledSectionBooks, StyledSectionInfo } from '../../styles/StyledSection'
+import { StyledButton, StyledButtonContainer, } from '../../styles/StyledButton'
+import { StyledGridBox } from "../../styles/StyledGridBox"
 
 export default function Books(){
   const [bookInfo, setBookInfo] = useState({title : 'Book', author : 'Author', testament : '', group : 'Group', timeline : 'Timeline', paragraph : 'Description'})
@@ -12,35 +11,33 @@ export default function Books(){
   }
 
   return(
-    <section>
-      <TitleS>Choose a book</TitleS>
-      <ContainerButtonS>
-        <ButtonS onClick={() => {handleClickBooks(
-          'Genesis', 'Moses', 'Old', 'Pentateuch', 'Creation to 1800 b.c', 'Genesis is a book of beginnings that introduces central themes of the Bible, such as creation and redemption.')}}>Genesis</ButtonS>
+    <StyledSectionBooks>
+      <h1>Choose a book</h1>
+      <StyledButtonContainer>
+        <StyledButton onClick={() => {handleClickBooks(
+          'Genesis', 'Moses', 'Old', 'Pentateuch', 'Creation to 1800 b.c', 'Genesis is a book of beginnings that introduces central themes of the Bible, such as creation and redemption.')}}>Genesis</StyledButton>
 
-        <ButtonS onClick={() => {handleClickBooks(
-          'Exodus', 'Moses', 'Old', 'Pentateuch', '1446 b.c to 1406 b.c', 'God reveals himself to his people and delivers them from slavery in Egypt to establish a covenant with them in the desert.')}}>Exodus</ButtonS>
+        <StyledButton onClick={() => {handleClickBooks(
+          'Exodus', 'Moses', 'Old', 'Pentateuch', '1446 b.c to 1406 b.c', 'God reveals himself to his people and delivers them from slavery in Egypt to establish a covenant with them in the desert.')}}>Exodus</StyledButton>
 
-        <ButtonS onClick={() => {handleClickBooks(
-          'Leviticus', 'Moses', 'Old', 'Pentateuch', '1446 b.c to 1406 b.c', 'The Israelites receive instructions from God at the base of Mount Sinai concerning how to live as God`s holy people.')}}>Leviticus</ButtonS>
+        <StyledButton onClick={() => {handleClickBooks(
+          'Leviticus', 'Moses', 'Old', 'Pentateuch', '1446 b.c to 1406 b.c', 'The Israelites receive instructions from God at the base of Mount Sinai concerning how to live as God`s holy people.')}}>Leviticus</StyledButton>
 
-        <ButtonS onClick={() => {handleClickBooks(
-          'Acts', 'Luke', 'New', 'Historical Books', 'About 63 a.c or later', 'Luke shows how the gospel spread rapidly from Jerusalem to the whole Roman Empire, and from its Jewish roots to the Gentile world.')}}>Acts</ButtonS>
-      </ContainerButtonS>
+        <StyledButton onClick={() => {handleClickBooks(
+          'Acts', 'Luke', 'New', 'Historical Books', 'About 63 a.c or later', 'Luke shows how the gospel spread rapidly from Jerusalem to the whole Roman Empire, and from its Jewish roots to the Gentile world.')}}>Acts</StyledButton>
+      </StyledButtonContainer>
       
-      <ContainerCardS>
-        <CardS>
-          <h2>{bookInfo.title}</h2>
-          <p>{bookInfo.paragraph}</p>
+      <StyledSectionInfo>
+        <h2>{bookInfo.title}</h2>
+        <p>{bookInfo.paragraph}</p>
 
-          <ContainerBoxInfoS>
-            <BoxInfoS><i className="fas fa-feather-alt"></i> {bookInfo.author}</BoxInfoS>
-            <BoxInfoS>{bookInfo.testament === 'Old'? <i className="fas fa-star-of-david"></i> : <i className="fas fa-cross"></i>} {bookInfo.testament} Testament</BoxInfoS>
-            <BoxInfoS><i className="far fa-bookmark"></i> {bookInfo.group}</BoxInfoS>
-            <BoxInfoS><i className="far fa-clock"></i> {bookInfo.timeline}</BoxInfoS>
-          </ContainerBoxInfoS>
-        </CardS>
-      </ContainerCardS>
-    </section>
+        <StyledGridBox>
+          <h5><i className="fas fa-feather-alt"></i> {bookInfo.author}</h5>
+          <h5>{bookInfo.testament === 'Old'? <i className="fas fa-star-of-david"></i> : <i className="fas fa-cross"></i>} {bookInfo.testament} Testament</h5>
+          <h5><i className="far fa-bookmark"></i> {bookInfo.group}</h5>
+          <h5><i className="far fa-clock"></i> {bookInfo.timeline}</h5>
+        </StyledGridBox>
+      </StyledSectionInfo>
+    </StyledSectionBooks>
   )
 }

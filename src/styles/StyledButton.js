@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerButtonS = styled.div`
+export const StyledButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -8,11 +8,10 @@ export const ContainerButtonS = styled.div`
   max-width: 768px;
   gap: 24px;
   padding: 16px;
-  padding-bottom: 0px;
   margin: 0 auto;
 `
 
-export const ButtonS = styled.button`
+export const StyledButton = styled.button`
   background-color: ${(props) => (props.theme.background)};
   color: white;
   cursor: pointer;
