@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const StyledSidebar = styled.nav`
   background-color: ${(props) => (props.theme.neutral)};
@@ -41,11 +41,13 @@ export const StyledButton = styled.button`
   padding: 16px;
   transition: all .5s;
 
-  &::before{
-    content: '${(props) => (props.isSelected === true ? '>' : '')}';
-    color: ${(props) => (props.theme.secondaryColor)};
-    margin-right: 4px;
-  }
+  ${(props) => (props.isSelected === true && css`
+    &::before{
+      content: '>';
+      color: ${props.theme.secondaryColor};
+      margin-right: 4px;
+    }
+  `)};
 
   &:hover{
     transform: translateX(8px);

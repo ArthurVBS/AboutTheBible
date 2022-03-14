@@ -18,7 +18,7 @@ export const StyledFooter = styled.footer`
   }
 
   a{
-    color: #80EE60;
+    color: ${(props) => (props.theme.secondaryColor)};
     font-weight: 300;
     transition: all .5s;
 

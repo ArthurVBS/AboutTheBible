@@ -1,0 +1,73 @@
+[
+  {
+    "book" : "Genesis",
+    "author" : "Moses",
+    "testament" : "Old",
+    "group" : "Pentateuch",
+    "timeline" : "Creation to 1800 BC",
+    "description" : "Genesis is a book of beginnings that introduces central themes of the Bible, such as creation and redemption."
+  },
+  
+  {
+    "book" : "Exodus",
+    "author" : "Moses",
+    "testament" : "Old",
+    "group" : "Pentateuch",
+    "timeline" : "1446 BC to 1406 BC",
+    "description" : "God reveals himself to his people and delivers them from slavery in Egypt to establish a covenant with them in the desert."
+  },
+  
+  {
+    "book" : "Leviticus",
+    "author" : "Moses",
+    "testament" : "Old",
+    "group" : "Pentateuch",
+    "timeline" : "1446 BC to 1406 BC",
+    "description" : "The Israelites receive instructions from God at the base of Mount Sinai concerning how to live as God's holy people."
+  },
+  
+  {
+    "book" : "Numbers",
+    "author" : "Moses",
+    "testament" : "Old",
+    "group" : "Pentateuch",
+    "timeline" : "1446 BC to 1406 BC",
+    "description" : "Because the Israelites are unwilling to enter the land of Canaan, their entire generation is forced to wander in the Desert of Sinai for 38 years."
+  },
+
+  {
+    "book" : "Deuteronomy",
+    "author" : "Moses",
+    "testament" : "Old",
+    "group" : "Pentateuch",
+    "timeline" : "About 1406 BC",
+    "description" : "In a series of farewell messages, Moses exhorts the new generation of Israelites to live as his obedient people in the promised land."
+  },
+
+  {
+    "book" : "Joshua",
+    "author" : "Unknown",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "1405 BC to 1390 BC",
+    "description" : "God enables Joshua to lead the armies of Israel to victory over the Canaanites in the promised land."
+  },
+
+  {
+    "book" : "Judges",
+    "author" : "Unknown",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "Possibly prior to 1043 BC",
+    "description" : "In danger of losing the promised land, the Israelites are delivered again and again by God through leaders known as 'judges.'"
+  },
+
+  {
+    "book" : "Acts",
+    "author" : "Luke",
+    "testament" : "New",
+    "group" : "Historical Books",
+    "timeline" : "About 63 AC or later",
+    "description" : "Luke shows how the gospel spread rapidly from Jerusalem to the whole Roman Empire, and from its Jewish roots to the Gentile world."
+  }
+]

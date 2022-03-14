@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const StyledHeader = styled.header`
   position: sticky;
   right: 0;
-  background-color: #202026;
+  background-color: ${(props) => (props.theme.neutral)};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -12,13 +12,15 @@ export const StyledHeader = styled.header`
   height: 100px;
   border-bottom: 1px solid #CCC;
   transition: all .8s;
-  transform: ${(props) => (props.isOpen === true ? 'translateY(-99px)' : null)};
+  ${(props) => (props.isOpen === true && css`
+    transform: translateY(-99px);
 
-  @media screen and (min-width:568px) {
-    width: ${(props) => (props.isOpen === true ? 'calc(100% - 280px)' : null)};
-    right: ${(props) => (props.isOpen === true ? '280px' : null)};
-    transform: ${(props) => (props.isOpen === true ? 'translateY(0px)' : null)};
-  }
+    @media screen and (min-width:568px) {
+      width: calc(100% - 280px);
+      right: 280px;
+      transform: translateY(0px);
+    }
+  `)};
 `
 
 export const StyledButtonToggle = styled.button`
