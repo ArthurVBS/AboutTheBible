@@ -13,7 +13,7 @@
     "author" : "Moses",
     "testament" : "Old",
     "group" : "Pentateuch",
-    "timeline" : "1446 BC to 1406 BC",
+    "timeline" : "1800 ~ 1445 BC",
     "description" : "God reveals himself to his people and delivers them from slavery in Egypt to establish a covenant with them in the desert."
   },
   
@@ -22,7 +22,7 @@
     "author" : "Moses",
     "testament" : "Old",
     "group" : "Pentateuch",
-    "timeline" : "1446 BC to 1406 BC",
+    "timeline" : "About 1445 BC",
     "description" : "The Israelites receive instructions from God at the base of Mount Sinai concerning how to live as God's holy people."
   },
   
@@ -31,7 +31,7 @@
     "author" : "Moses",
     "testament" : "Old",
     "group" : "Pentateuch",
-    "timeline" : "1446 BC to 1406 BC",
+    "timeline" : "1445 ~ 1407 BC",
     "description" : "Because the Israelites are unwilling to enter the land of Canaan, their entire generation is forced to wander in the Desert of Sinai for 38 years."
   },
 
@@ -46,20 +46,164 @@
 
   {
     "book" : "Joshua",
-    "author" : "Unknown",
+    "author" : "Possibly Joshua",
     "testament" : "Old",
     "group" : "Historical Books",
-    "timeline" : "1405 BC to 1390 BC",
+    "timeline" : "1406 ~ 1375 BC",
     "description" : "God enables Joshua to lead the armies of Israel to victory over the Canaanites in the promised land."
   },
 
   {
     "book" : "Judges",
+    "author" : "Possibly Samuel",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "1375 ~ 1075 BC",
+    "description" : "In danger of losing the promised land, the Israelites are delivered again and again by God through leaders known as 'judges.'"
+  },
+
+  {
+    "book" : "Ruth",
+    "author" : "Possibly Samuel",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "About 1140 BC",
+    "description" : "Ruth, a Moabite woman, proves to be a model of faithfulness in Israel during the period of the judges."
+  },
+
+  {
+    "book" : "1 Samuel",
     "author" : "Unknown",
     "testament" : "Old",
     "group" : "Historical Books",
-    "timeline" : "Possibly prior to 1043 BC",
-    "description" : "In danger of losing the promised land, the Israelites are delivered again and again by God through leaders known as 'judges.'"
+    "timeline" : "1100 ~ 1010 BC",
+    "description" : "The nation of Israel transitions from being led by God through 'judges' to being led by him through kings."
+  },
+
+  {
+    "book" : "2 Samuel",
+    "author" : "Unknown",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "1010 ~ 970 BC",
+    "description" : "Second Samuel presents the story of David's 40-year reign, beginning with his rise to become Israel's model king and ending with his subsequent decline caused by sin."
+  },
+
+  {
+    "book" : "1 Kings",
+    "author" : "Possibly Jeremiah",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "970 ~ 853 BC",
+    "description" : "After Solomon's death, the nation is divided into the northern kingdom (Israel) and the southern kingdom (Judah)."
+  },
+
+  {
+    "book" : "2 Kings",
+    "author" : "Possibly Jeremiah",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "852 ~ 586 BC",
+    "description" : "Learn from the lessons of the Israelites' history about the consequences of unfaithfulness to God and about God's patience and faithfulness."
+  },
+
+  {
+    "book" : "1 Chronicles",
+    "author" : "Possibly Ezra",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "1003 ~ 970 BC",
+    "description" : "The law and the prophets, like the temple, are more crucial to Israel's continuing relationship with the Lord than the presence or absence of a king; the reigns of the Davidic kings themselves being testimony."
+  },
+
+  {
+    "book" : "2 Chronicles",
+    "author" : "Possibly Ezra",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "967 ~ 609 BC",
+    "description" : "The law and the prophets, like the temple, are more crucial to Israel's continuing relationship with the Lord than the presence or absence of a king; the reigns of the Davidic kings themselves being testimony."
+  },
+
+  {
+    "book" : "Ezra",
+    "author" : "Possibly Ezra",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "537 ~ 456 BC",
+    "description" : "A remnant of the Israelites, who had been exiled to Babylonia, return to Judah and Jerusalem to rebuild the temple under God's direction."
+  },
+
+  {
+    "book" : "Nehemiah",
+    "author" : "Possibly Ezra",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "445 ~ 432 BC",
+    "description" : "Nehemiah travels from Susa in Elam to Jerusalem in Judah to lead the Jews in rebuilding the city walls."
+  },
+
+  {
+    "book" : "Esther",
+    "author" : "Unknown",
+    "testament" : "Old",
+    "group" : "Historical Books",
+    "timeline" : "483 ~ 472 BC",
+    "description" : "The book of Esther describes how the Jews of Persia are saved from certain destruction through divine providence."
+  },
+
+  {
+    "book" : "Job",
+    "author" : "Unknown",
+    "testament" : "Old",
+    "group" : "Wisdom Literature",
+    "timeline" : "2000 ~ 1000 BC",
+    "description" : "This wisdom book ponders the question of whether God is a God of justice in the light of life's perplexities, such as human suffering."
+  },
+
+  {
+    "book" : "Psalm",
+    "author" : "David, Asaph and Others",
+    "testament" : "Old",
+    "group" : "Wisdom Literature",
+    "timeline" : "1407 ~ 586 BC",
+    "description" : "The book of Psalms contains ancient Israel's favorite hymns and prayers, which were used in their worship of God, the Great King."
+  },
+
+  {
+    "book" : "Proverbs",
+    "author" : "Solomon and other wise men",
+    "testament" : "Old",
+    "group" : "Wisdom Literature",
+    "timeline" : "About 950 BC",
+    "description" : "Proverbs describes the importance of living wisely and in the fear of the Lord as opposed to following the seductive path of folly."
+  },
+
+  {
+    "book" : "Ecclesiastes",
+    "author" : "Possibly Solomon",
+    "testament" : "Old",
+    "group" : "Wisdom Literature",
+    "timeline" : "About 937 BC",
+    "description" : "This wisdom teacher reveals what he has discovered about the meaninglessness of every human endeavor without God at the center of one's life."
+  },
+
+  {
+    "book" : "Canticles",
+    "author" : "Possibly Solomon",
+    "testament" : "Old",
+    "group" : "Wisdom Literature",
+    "timeline" : "About 950 BC",
+    "description" : "This wisdom writer celebrates the sexual union between a man and a woman as a joyful part of marital life in God's good creation."
+  },
+
+  {
+    "book" : "Isaiah",
+    "author" : "Isaiah",
+    "testament" : "Old",
+    "group" : "Major Prophets",
+    "timeline" : "739 ~ 701 BC",
+    "description" : "Isaiah predicts imminent judgment — but eventual restoration — for the people of Judah and Jerusalem."
   },
 
   {

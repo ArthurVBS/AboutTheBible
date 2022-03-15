@@ -1,0 +1,75 @@
+{
+  "old testament" : [
+    {
+      "group" : "Pentateuch",
+      "testament" : "old",
+      "books" : ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy"],
+      "description" : "The Pentateuch is composed of the first 5 books of the Bible. These are part of the Torah, the Book of the Law for the Jews. All are arranged in chronological order."
+    },
+    
+    {
+      "group" : "Historical Books",
+      "testament" : "old",
+      "books" : ["Joshua", "Judges", "Ruth", "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles", "2 Chronicles", "Ezra", "Nehemiah", "Esther"],
+      "description" : "This set consists of 12 books that tell the story of the people of Israel from the conquest of the Promised Land to the Babylonian exile. The 12 books are also in chronological order."
+    },
+    
+    {
+      "group" : "Wisdom Literature",
+      "testament" : "old",
+      "books" : ["Job", "Psalms", "Proverbs", "Ecclesiastes", "Canticles"],
+      "description" : "They are poetry, wisdom, proverbs and songs. 5 books are part of this group."
+    },
+    
+    {
+      "group" : "Major Prophets",
+      "testament" : "old",
+      "books" : ["Isaiah", "Jeremiah", "Lamentations", "Ezekiel", "Daniel"],
+      "description" : "The prophetic books - Major Prophets and Minor Prophets - are records of the prophets about the People of Israel."
+    },
+    
+    {
+      "group" : "Minor Prophets",
+      "testament" : "old",
+      "books" : ["Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah", "Nahum", "Habakkuk", "Zephaniah", "Haggai", "Zechariah", "Malachi"],
+      "description" : "The books of the minor prophets have fewer chapters than the books of the major prophets."
+    }
+  ],
+
+  "new testament" : [
+    {
+      "group" : "Gospels",
+      "testament" : "new",
+      "books" : ["Matthew", "Mark", "Luke", "John"],
+      "description" : "The 4 Gospels recount the birth, ministry, death, resurrection and ascension of Jesus."
+    },
+    
+    {
+      "group" : "Historical Books",
+      "testament" : "new",
+      "books" : ["Acts"],
+      "description" : "It consists of only one historical book. The book deals with the implementation of the Early Church after the outpouring of the Holy Spirit and the spread of the Gospel."
+    },
+    
+    {
+      "group" : "Paul's letters",
+      "testament" : "new",
+      "books" : ["Romans", "1 Corinthians", "2 Corinthians", "Galatians", "Ephesians", "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians", "1 Timothy", "2 Timothy", "Titus", "Philemon"],
+      "description" : "They are apostolic letters addressed to the first scattered churches in the ancient world. All cards are arranged chronologically."
+    },
+    
+    {
+      "group" : "General letters",
+      "testament" : "new",
+      "books" : ["James", "1 Peter", "2 Peter", "1 John", "2 John", "3 John", "Jude"],
+      "description" : "Letters written by other apostles. Also organized chronologically, in addition to talking about the first churches scattered around the world."
+    },
+    
+    {
+      "group" : "Apocalyptic Literature",
+      "testament" : "new",
+      "books" : ["Revelation"],
+      "description" : "Revelation of Jesus' return."
+    }
+  ]
+}

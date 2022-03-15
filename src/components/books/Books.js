@@ -1,26 +1,33 @@
 import { useState } from 'react'
 import { StyledSectionBooks, StyledSectionInfo } from '../../styles/StyledSection'
-import { StyledButton, StyledButtonContainer, } from '../../styles/StyledButton'
 import { StyledGridBox } from "../../styles/StyledGridBox"
+import { StyledSelectContainer, StyledSelect } from '../../styles/StyledSelect'
 
 export default function Books(){
-  const jsonData = require('../../Books.json')
+  const jsonBooksData = require('../../Books.json')
   const [bookInfo, setBookInfo] = useState({title : 'Book', author : 'Author', testament : '', group : 'Group', timeline : 'Timeline', paragraph : 'Description'})
 
-  function handleClickBooks(title, author, testament, group, timeline, paragraph){
-    setBookInfo({title : title, author : author, testament : testament, group : group, timeline : timeline, paragraph : paragraph})
+  function handleChange(event){
+    const values = event.target.value.split(';')
+    setBookInfo({title : values[0], author : values[1], testament : values[2], group : values[3], timeline : values[4], paragraph : values[5]})
   }
 
   return(
     <StyledSectionBooks>
       <h1>Choose a book</h1>
-      <StyledButtonContainer>
 
-        {jsonData.map((value, index) => {
-          return <StyledButton key={index} onClick={() => handleClickBooks(value.book, value.author, value.testament, value.group, value.timeline, value.description)}>{value.book}</StyledButton>
-        })}
+      <StyledSelectContainer>
 
-      </StyledButtonContainer>
+        <StyledSelect id='inputText' defaultValue={`Book; Author; ; Group; Timeline; Description;`} onClick={(e) => handleChange(e)}>
+          <option value={`Book; Author; ; Group; Timeline; Description;`} disabled></option>
+
+          {jsonBooksData.map((value, index) => {
+            return <option key={index} value={`${value.book}; ${value.author}; ${value.testament}; ${value.group}; ${value.timeline}; ${value.description};`}>{value.book}</option>
+          })}
+          
+        </StyledSelect>
+
+      </StyledSelectContainer>
       
       <StyledSectionInfo>
         <h2>{bookInfo.title}</h2>
@@ -32,6 +39,7 @@ export default function Books(){
           <h5><i className="far fa-bookmark"></i> {bookInfo.group}</h5>
           <h5><i className="far fa-clock"></i> {bookInfo.timeline}</h5>
         </StyledGridBox>
+
       </StyledSectionInfo>
     </StyledSectionBooks>
   )
