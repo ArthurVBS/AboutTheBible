@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/AboutTheBible/static/js/main.4053de12.js",
+    "main.js": "/AboutTheBible/static/js/main.2f30edbf.js",
     "index.html": "/AboutTheBible/index.html",
-    "main.4053de12.js.map": "/AboutTheBible/static/js/main.4053de12.js.map"
+    "main.2f30edbf.js.map": "/AboutTheBible/static/js/main.2f30edbf.js.map"
   },
   "entrypoints": [
-    "static/js/main.4053de12.js"
+    "static/js/main.2f30edbf.js"
   ]
 }
