@@ -91,7 +91,7 @@ export const StyledMenu = styled.nav`
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    padding: 4px;
+    padding: 5px;
     transition: all .3s;
     
     ${(props) => (props.isOpen) !== true && css`
@@ -103,7 +103,7 @@ export const StyledMenu = styled.nav`
     }
     
     @media screen and (min-width: 568px) {
-      padding: 6px;
+      padding: 7px;
     }
   }
 `

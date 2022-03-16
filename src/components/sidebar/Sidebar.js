@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { StyledSidebar, StyledButtonContainer, StyledButton, StyledLinkContainer, StyledLink } from '../../styles/StyledSidebar'
 
 export default function Sidebar(props){
-  const [buttons, setButtons] = useState({'about': false, 'organization': true, 'books': false})
+  const [buttons, setButtons] = useState({'about': true, 'organization': false, 'books': false})
 
   function handleClick(name){
     props.setShowContainer(name)

@@ -6,7 +6,7 @@ export default function Main(props){
 
   function setMainSection(container){
     if (container === 'about'){
-      return <About />
+      return <About sidebarOpen={props.sidebarOpen} setSidebarOpen={props.setSidebarOpen}/>
     }
     else if (container === 'organization'){
       return <Organization />

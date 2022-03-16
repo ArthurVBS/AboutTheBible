@@ -1,22 +1,21 @@
-import { useState } from 'react'
 import Sidebar from '../sidebar/Sidebar'
 import logo from '../../assets/logo.png'
 import { StyledHeader, StyledButtonToggle } from '../../styles/StyledHeader'
 
 export default function Header(props) {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
-
   return (
     <>
-      <StyledHeader isOpen={sidebarOpen}>
-        <img className='logo' src={logo} alt='Logo'></img>
+      <StyledHeader id='header' isOpen={props.sidebarOpen}>
+        <img className='logo' src={logo} alt='Logo' />
 
-        <StyledButtonToggle onClick={() => {setSidebarOpen(!sidebarOpen)}}>
-          {sidebarOpen === true ? <i className="fas fa-times"></i> : <i className='fas fa-bars'></i>}
+        {/* window.scrollTo(0, 0) ? */}
+        
+        <StyledButtonToggle onClick={() => {props.setSidebarOpen(!props.sidebarOpen)}}>
+          {props.sidebarOpen === true ? <i className="fas fa-times"></i> : <i className='fas fa-bars'></i>}
         </StyledButtonToggle>
       </StyledHeader>
 
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} setShowContainer={props.setShowContainer} />
+      <Sidebar sidebarOpen={props.sidebarOpen} setSidebarOpen={props.setSidebarOpen} setShowContainer={props.setShowContainer} />
     </>
   )
 }
