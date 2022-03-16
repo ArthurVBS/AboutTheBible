@@ -11,7 +11,6 @@ export const StyledSectionBooks = styled.section`
     letter-spacing: 2px;
     text-align: center;
     padding: 24px;
-    border-bottom: 2px solid ${(props) => (props.theme.neutral)};
   }
 `
 
@@ -28,7 +27,6 @@ export const StyledSectionInfo = styled.section`
   margin: 0 auto;
   border-radius: 32px;
   border: 16px solid ${(props) => props.theme.background};
-  border-top: 0px;
 
   h2{
     text-align: center;
