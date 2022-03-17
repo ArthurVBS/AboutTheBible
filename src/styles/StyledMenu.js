@@ -27,6 +27,7 @@ export const StyledMenuToggle = styled.button`
 
 export const StyledMenuContainer = styled.div`
   position: relative;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;

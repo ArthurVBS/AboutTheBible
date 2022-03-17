@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const StyledSidebar = styled.nav`
   background-color: ${(props) => (props.theme.neutral)};
-  z-index: 10;
+  z-index: 11;
   position: fixed;
   top: 0px;
   right: 0px;
