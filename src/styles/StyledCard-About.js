@@ -6,8 +6,6 @@ export const StyledCardAboutTop = styled.div`
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 100px);
-  max-width: 1024px;
-  margin: 0 auto;
   gap: 16px;
   padding: 16px;
   
@@ -18,26 +16,25 @@ export const StyledCardAboutTop = styled.div`
   @media screen and (min-width: 920px) {
     padding: 32px;
   }
-`
+  `
 
 export const StyledCardAboutCenter = styled.div`
-  background-color: ${(props) => (props.theme.neutral)};
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 100px);
+background-color: ${(props) => (props.theme.neutral)};
+display: grid;
+grid-template-columns: 1fr;
+justify-content: center;
+align-items: center;
+min-height: calc(100vh - 100px);
+gap: 16px;
+padding: 16px;
 
-  gap: 16px;
-  padding: 16px;
-
-  @media screen and (min-width: 568px) {
-    grid-template-columns: repeat(2, 1fr);
-    }
-    
-    @media screen and (min-width: 920px) {
-      padding: 32px;
-    }
+@media screen and (min-width: 568px) {
+  grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media screen and (min-width: 920px) {
+    padding: 32px;
+  }
 `
 
 export const StyledCardAboutBottom = styled.div`

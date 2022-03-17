@@ -7,11 +7,10 @@ export default function Header(props) {
     <>
       <StyledHeader id='header' isOpen={props.sidebarOpen}>
         <img className='logo' src={logo} alt='Logo' />
+
+        {/* window.scrollTo(0, 0) ? */}
         
-        <StyledButtonToggle onClick={() => {
-          window.scrollTo(0, 0)
-          props.setSidebarOpen(!props.sidebarOpen)
-        }}>
+        <StyledButtonToggle onClick={() => {props.setSidebarOpen(!props.sidebarOpen)}}>
           {props.sidebarOpen === true ? <i className="fas fa-times"></i> : <i className='fas fa-bars'></i>}
         </StyledButtonToggle>
       </StyledHeader>

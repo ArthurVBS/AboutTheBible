@@ -5,17 +5,13 @@ import { StyledDivAboutTop, StyledDivAboutCenter } from '../../styles/StyledDiv-
 import { StyledCardAboutTop, StyledCardAboutCenter, StyledCardAboutBottom } from '../../styles/StyledCard-About'
 import { StyledImgBooks, StyledImgHandBible } from '../../styles/StyledImg'
 
-import { Fade } from 'react-reveal';
-
 export default function About(props) {
   return (
     <section>
       <StyledCardAboutTop>
         <StyledDivAboutTop>
           <h1>About The Bible</h1>
-          <Fade left>
-            <h4><i className="fas fa-dove"></i> "Then you will know the truth, and the truth will set you free." -  <span>John 8:32</span></h4>
-          </Fade>
+          <h4><i className="fas fa-dove"></i> "Then you will know the truth, and the truth will set you free." - John 8:32</h4>
         </StyledDivAboutTop>
 
         <StyledImgHandBible src={handBible} alt='Picture' />
@@ -26,9 +22,7 @@ export default function About(props) {
         <StyledImgBooks src={undrawBook} alt='Picture' />
 
         <StyledDivAboutCenter>
-          <Fade right>
-            <h3>... Soon</h3>
-          </Fade>
+          <h3>... Soon</h3>
         </StyledDivAboutCenter>
       </StyledCardAboutCenter>
 
