@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { StyledMenu, StyledMenuToggle, StyledMenuContainer } from '../../styles/StyledMenu'
+import { StyledMenu, StyledToggle, StyledContainer } from './Styled'
 
 export default function MenuDropdown(props) {
   const jsonBooksData = require('../../Books.json')
@@ -10,11 +10,11 @@ export default function MenuDropdown(props) {
   }
 
   return(
-    <StyledMenuContainer>
-      <StyledMenuToggle isOpen={menuOpen} onClick={() => (setMenuOpen(!menuOpen))}>
+    <StyledContainer>
+      <StyledToggle isOpen={menuOpen} onClick={() => (setMenuOpen(!menuOpen))}>
         <span>{props.bookInfo.title}</span>
         <i className="fas fa-angle-down"></i>
-      </StyledMenuToggle>
+      </StyledToggle>
 
       <StyledMenu isOpen={menuOpen} onClick={() => (setMenuOpen(!menuOpen))}>
         <span><i className="fas fa-angle-up"></i></span>
@@ -22,6 +22,6 @@ export default function MenuDropdown(props) {
           return <button key={index} onClick={() => handleClickBooks(value.book, value.author, value.testament, value.group, value.timeline, value.description)}>{value.book}</button>
         })}
       </StyledMenu>
-    </StyledMenuContainer>
+    </StyledContainer>
   )
 }

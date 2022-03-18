@@ -207,6 +207,150 @@
   },
 
   {
+    "book" : "Jeremiah",
+    "author" : "Jeremiah",
+    "testament" : "Old",
+    "group" : "Major Prophets",
+    "timeline" : "627 ~ 586 BC",
+    "description" : "Jeremiah, the prophet of the new covenant, predicts Judah's Babylonian exile and ultimate restoration under the Davidic Messiah."
+  },
+
+  {
+    "book" : "Lamentations",
+    "author" : "Probably Jeremiah",
+    "testament" : "Old",
+    "group" : "Major Prophets",
+    "timeline" : "586 BC",
+    "description" : "The prophet and his fellow Jews lament the devastation of their beloved city at the hands of the Babylonians. In the middle of the book, the theology of Lamentations reaches its apex as it focuses on the goodness of God."
+  },
+
+  {
+    "book" : "Ezekiel",
+    "author" : "Ezekiel",
+    "testament" : "Old",
+    "group" : "Major Prophets",
+    "timeline" : "593 ~ 573 BC",
+    "description" : "Ezekiel the priest assures his fellow Jews that God will one day return them to Jerusalem and restore the temple."
+  },
+
+  {
+    "book" : "Daniel",
+    "author" : "Daniel",
+    "testament" : "Old",
+    "group" : "Major Prophets",
+    "timeline" : "605 ~ 539 BC",
+    "description" : "The Most High God is sovereign over all human kingdoms."
+  },
+
+  {
+    "book" : "Hosea",
+    "author" : "Hosea",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "753 BC",
+    "description" : "Hosea proclaims God's compassion and covenant love that cannot let Israel go."
+  },
+
+  {
+    "book" : "Joel",
+    "author" : "Joel",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "835 BC",
+    "description" : "Restoration and blessing will come to the people of Judah only after judgment and repentance."
+  },
+
+  {
+    "book" : "Amos",
+    "author" : "Amos",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "766 BC",
+    "description" : "The prophet Amos calls for social justice as the indispensable expression of true piety."
+  },
+
+  {
+    "book" : "Obadiah",
+    "author" : "Obadiah",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "853 BC",
+    "description" : "Obadiah prophesies judgment against the proud Edomites, who are gloating over Jerusalem's devastation by foreign powers."
+  },
+
+  {
+    "book" : "Jonah",
+    "author" : "Unknown",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "760 BC",
+    "description" : "In this story of God's loving concern for all people, the stubbornly reluctant Jonah represents Israel's jealousy of its favored relationship with God and its unwillingness to share the Lord's compassion with the nations."
+  },
+
+  {
+    "book" : "Micah",
+    "author" : "Micah",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "735 BC",
+    "description" : "Micah's message alternates between prophecies of doom and prophecies of hope; the theme is divine judgment and deliverance."
+  },
+
+  {
+    "book" : "Nahum",
+    "author" : "Nahum",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "697 BC",
+    "description" : "Nahum predicts the Lord's judgment on Nineveh for her oppression, cruelty, idolatry and wickedness."
+  },
+
+  {
+    "book" : "Habakkuk",
+    "author" : "Habakkuk",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "625 BC",
+    "description" : "The prophet Habakkuk argues with God over God's ways, which appear to him unfathomable, if not unjust; after receiving replies from God, Habakkuk responds with a beautiful confession of faith."
+  },
+
+  {
+    "book" : "Zephaniah",
+    "author" : "Zephaniah",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "638 BC",
+    "description" : "The prophet Zephaniah predicts the coming of the day of the Lord, when God will severely punish the nations, including apostate Judah, but will yet be merciful to his people."
+  },
+
+  {
+    "book" : "Haggai",
+    "author" : "Haggai",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "520 BC",
+    "description" : "The prophet Haggai calls the complacent people of Judah to resume the rebuilding of the temple and in that way give glory to God."
+  },
+
+  {
+    "book" : "Zechariah",
+    "author" : "Zechariah",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "520 BC",
+    "description" : "The prophet Zechariah rebukes and encourages the discouraged exiles who have returned to Jerusalem from Babylonia to complete the rebuilding of the temple."
+  },
+
+  {
+    "book" : "Malachi",
+    "author" : "Malachi",
+    "testament" : "Old",
+    "group" : "Minor Prophets",
+    "timeline" : "430 BC",
+    "description" : "The prophet Malachi assures the postexilic Jewish community that the Messianic King will come not only to judge his people but also to bless and restore them."
+  },
+
+  {
     "book" : "Acts",
     "author" : "Luke",
     "testament" : "New",

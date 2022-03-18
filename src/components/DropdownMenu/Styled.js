@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const StyledMenuToggle = styled.button`
+export const StyledToggle = styled.button`
   background-color: ${(props) => (props.theme.background)};
   color: white;
   cursor: pointer;
@@ -25,7 +25,7 @@ export const StyledMenuToggle = styled.button`
   `};
 `
 
-export const StyledMenuContainer = styled.div`
+export const StyledContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,11 +47,30 @@ export const StyledMenu = styled.nav`
   gap: 8px;
   width: calc(100% - 32px);
   max-width: calc(768px - (16px * 2));
+  overflow-y: scroll;
+  max-height: 350px;
   padding: 16px;
   border: 2px solid ${(props) => (props.theme.primaryColor)};
-  border-radius: 16px;
+  border-radius: 8px;
   margin: 16px;
   transition: all .3s;
+
+  scrollbar-width: auto;
+  scrollbar-color: ${(props) => (props.theme.primaryColor)} transparent;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${(props) => (props.theme.primaryColor)};
+    border-radius: 8px;
+    border: 3px solid ${(props) => (props.theme.background)};
+  }
 
   ${(props) => (props.isOpen) === true && css`
     top: 0px;
@@ -61,6 +80,10 @@ export const StyledMenu = styled.nav`
 
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(3, 1fr);
+
+    ::-webkit-scrollbar {
+      width: 14px;
+    }
   }
   
   span {
@@ -71,7 +94,7 @@ export const StyledMenu = styled.nav`
     grid-column: 1/3;
     padding: 4px;
     border: 2px solid ${(props) => (props.theme.primaryColor)};
-    border-radius: 12px;
+    border-radius: 8px;
     margin-bottom: 8px;
     transition: all .4s;
     

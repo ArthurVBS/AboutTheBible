@@ -1,4 +1,4 @@
-import { StyledCard, StyledDetails, StyledBooksContainer, StyledBooks } from '../../styles/StyledCard-Books'
+import { StyledCard, StyledDetails, StyledBooksContainer, StyledBooks } from './Styled'
 
 export default function Card(props) {
   const books = props.books

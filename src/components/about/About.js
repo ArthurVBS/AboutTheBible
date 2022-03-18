@@ -1,9 +1,7 @@
 import undrawBook from '../../assets/books.png'
 import handBible from '../../assets/hand_bible.png'
-import { StyledButtonAbout } from '../../styles/StyledButton-About'
-import { StyledDivAboutTop, StyledDivAboutCenter } from '../../styles/StyledDiv-About'
-import { StyledCardAboutTop, StyledCardAboutCenter, StyledCardAboutBottom } from '../../styles/StyledCard-About'
-import { StyledImgBooks, StyledImgHandBible } from '../../styles/StyledImg'
+
+import { StyledImgBooks, StyledImgHandBible, StyledDivAboutTop, StyledDivAboutCenter, StyledCardAboutTop, StyledCardAboutCenter, StyledCardAboutBottom, StyledButtonAbout } from './Styled'
 
 export default function About(props) {
   return (

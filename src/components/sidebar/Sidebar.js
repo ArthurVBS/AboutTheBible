@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { StyledSidebar, StyledButtonContainer, StyledButton, StyledLinkContainer, StyledLink } from '../../styles/StyledSidebar'
+import { StyledSidebar, StyledButtonContainer, StyledButton, StyledLinkContainer, StyledLink } from './Styled'
 
 export default function Sidebar(props){
   const [buttons, setButtons] = useState({'about': true, 'organization': false, 'books': false})

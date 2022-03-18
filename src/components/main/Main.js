@@ -1,6 +1,6 @@
-import About from '../about/About'
-import Organization from '../organization/Organization'
-import Books from '../books/Books'
+import About from '../About/About'
+import Organization from '../Organization/Organization'
+import Books from '../Books/Books'
 
 export default function Main(props){
 

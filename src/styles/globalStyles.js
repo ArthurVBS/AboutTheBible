@@ -9,6 +9,30 @@ export default createGlobalStyle`
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    scrollbar-width: auto;
+    scrollbar-color: ${(props) => (props.theme.primaryColor)} ${(props) => (props.theme.neutral)};
+  }
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+    background: ${(props) => (props.theme.neutral)};
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: ${(props) => (props.theme.primaryColor)};
+    border-radius: 8px;
+    border: 4px solid ${(props) => (props.theme.neutral)};
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #707070;
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #808080;
   }
 
   html{
@@ -34,5 +58,4 @@ export default createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-
 `

@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { StyledSectionBooks, StyledSectionInfo } from '../../styles/StyledSection'
-import { StyledGridBox } from "../../styles/StyledGridBox"
-import MenuDropdown from '../menuDropdown/MenuDropdown'
+import { StyledSectionBooks, StyledSectionInfo, StyledGridBox } from './Styled'
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
 export default function Books(){
   const [bookInfo, setBookInfo] = useState({title : 'Book', author : 'Author', testament : '', group : 'Group', timeline : 'Timeline', paragraph : 'Description'})
@@ -10,7 +9,7 @@ export default function Books(){
     <StyledSectionBooks>
       <h1>Choose a book</h1>
 
-      <MenuDropdown bookInfo={bookInfo} setBookInfo={setBookInfo} />
+      <DropdownMenu bookInfo={bookInfo} setBookInfo={setBookInfo} />
       
       <StyledSectionInfo>
         <h2>{bookInfo.title}</h2>
