@@ -20,7 +20,7 @@ export default function Organization() {
         })}
 
       </StyledSectionTestament>
-      
+
       <StyledSectionTestament id='newTestament' color={'primary'}>
         <h1>New Testament</h1>
 

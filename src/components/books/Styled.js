@@ -64,7 +64,7 @@ export const StyledGridBox = styled.div`
       color: ${(props) => (props.theme.primaryColor)};
     }
   }
-  
+
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -8,7 +8,7 @@ export default function About(props) {
     <section>
       <StyledCardAboutTop>
         <StyledDivAboutTop>
-          <h1>About The Bible</h1>
+          <h1 data-animation='right'>About The Bible</h1>
           <h4><i className="fas fa-dove"></i> "Then you will know the truth, and the truth will set you free." - John 8:32</h4>
         </StyledDivAboutTop>
 
@@ -26,11 +26,12 @@ export default function About(props) {
 
 
       <StyledCardAboutBottom>
-        <StyledButtonAbout onClick={() => {window.scrollTo(0, 0)}} variant='selected'>
+        <StyledButtonAbout onClick={() => { window.scrollTo(0, 0) }} variant='selected'>
           About <i className="fas fa-chevron-circle-up"></i>
         </StyledButtonAbout>
 
-        <StyledButtonAbout onClick={() => {window.scrollTo(0, 0)
+        <StyledButtonAbout onClick={() => {
+          window.scrollTo(0, 0)
           props.setSidebarOpen(!props.sidebarOpen)
         }}>
           Organization / Books <i className="fas fa-chevron-circle-right"></i>

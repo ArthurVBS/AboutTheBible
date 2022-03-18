@@ -1,361 +1,322 @@
 [
   {
-    "book" : "Genesis",
-    "author" : "Moses",
-    "testament" : "Old",
-    "group" : "Pentateuch",
-    "timeline" : "Creation to 1800 BC",
-    "description" : "Genesis is a book of beginnings that introduces central themes of the Bible, such as creation and redemption."
+    "book": "Genesis",
+    "author": "Moses",
+    "testament": "Old",
+    "group": "Pentateuch",
+    "timeline": "Creation to 1800 BC",
+    "description": "Genesis is a book of beginnings that introduces central themes of the Bible, such as creation and redemption."
   },
-  
   {
-    "book" : "Exodus",
-    "author" : "Moses",
-    "testament" : "Old",
-    "group" : "Pentateuch",
-    "timeline" : "1800 ~ 1445 BC",
-    "description" : "God reveals himself to his people and delivers them from slavery in Egypt to establish a covenant with them in the desert."
+    "book": "Exodus",
+    "author": "Moses",
+    "testament": "Old",
+    "group": "Pentateuch",
+    "timeline": "1800 ~ 1445 BC",
+    "description": "God reveals himself to his people and delivers them from slavery in Egypt to establish a covenant with them in the desert."
   },
-  
   {
-    "book" : "Leviticus",
-    "author" : "Moses",
-    "testament" : "Old",
-    "group" : "Pentateuch",
-    "timeline" : "About 1445 BC",
-    "description" : "The Israelites receive instructions from God at the base of Mount Sinai concerning how to live as God's holy people."
+    "book": "Leviticus",
+    "author": "Moses",
+    "testament": "Old",
+    "group": "Pentateuch",
+    "timeline": "About 1445 BC",
+    "description": "The Israelites receive instructions from God at the base of Mount Sinai concerning how to live as God's holy people."
   },
-  
   {
-    "book" : "Numbers",
-    "author" : "Moses",
-    "testament" : "Old",
-    "group" : "Pentateuch",
-    "timeline" : "1445 ~ 1407 BC",
-    "description" : "Because the Israelites are unwilling to enter the land of Canaan, their entire generation is forced to wander in the Desert of Sinai for 38 years."
+    "book": "Numbers",
+    "author": "Moses",
+    "testament": "Old",
+    "group": "Pentateuch",
+    "timeline": "1445 ~ 1407 BC",
+    "description": "Because the Israelites are unwilling to enter the land of Canaan, their entire generation is forced to wander in the Desert of Sinai for 38 years."
   },
-
   {
-    "book" : "Deuteronomy",
-    "author" : "Moses",
-    "testament" : "Old",
-    "group" : "Pentateuch",
-    "timeline" : "About 1406 BC",
-    "description" : "In a series of farewell messages, Moses exhorts the new generation of Israelites to live as his obedient people in the promised land."
+    "book": "Deuteronomy",
+    "author": "Moses",
+    "testament": "Old",
+    "group": "Pentateuch",
+    "timeline": "About 1406 BC",
+    "description": "In a series of farewell messages, Moses exhorts the new generation of Israelites to live as his obedient people in the promised land."
   },
-
   {
-    "book" : "Joshua",
-    "author" : "Possibly Joshua",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "1406 ~ 1375 BC",
-    "description" : "God enables Joshua to lead the armies of Israel to victory over the Canaanites in the promised land."
+    "book": "Joshua",
+    "author": "Possibly Joshua",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "1406 ~ 1375 BC",
+    "description": "God enables Joshua to lead the armies of Israel to victory over the Canaanites in the promised land."
   },
-
   {
-    "book" : "Judges",
-    "author" : "Possibly Samuel",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "1375 ~ 1075 BC",
-    "description" : "In danger of losing the promised land, the Israelites are delivered again and again by God through leaders known as 'judges.'"
+    "book": "Judges",
+    "author": "Possibly Samuel",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "1375 ~ 1075 BC",
+    "description": "In danger of losing the promised land, the Israelites are delivered again and again by God through leaders known as 'judges.'"
   },
-
   {
-    "book" : "Ruth",
-    "author" : "Possibly Samuel",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "About 1140 BC",
-    "description" : "Ruth, a Moabite woman, proves to be a model of faithfulness in Israel during the period of the judges."
+    "book": "Ruth",
+    "author": "Possibly Samuel",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "About 1140 BC",
+    "description": "Ruth, a Moabite woman, proves to be a model of faithfulness in Israel during the period of the judges."
   },
-
   {
-    "book" : "1 Samuel",
-    "author" : "Unknown",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "1100 ~ 1010 BC",
-    "description" : "The nation of Israel transitions from being led by God through 'judges' to being led by him through kings."
+    "book": "1 Samuel",
+    "author": "Unknown",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "1100 ~ 1010 BC",
+    "description": "The nation of Israel transitions from being led by God through 'judges' to being led by him through kings."
   },
-
   {
-    "book" : "2 Samuel",
-    "author" : "Unknown",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "1010 ~ 970 BC",
-    "description" : "Second Samuel presents the story of David's 40-year reign, beginning with his rise to become Israel's model king and ending with his subsequent decline caused by sin."
+    "book": "2 Samuel",
+    "author": "Unknown",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "1010 ~ 970 BC",
+    "description": "Second Samuel presents the story of David's 40-year reign, beginning with his rise to become Israel's model king and ending with his subsequent decline caused by sin."
   },
-
   {
-    "book" : "1 Kings",
-    "author" : "Possibly Jeremiah",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "970 ~ 853 BC",
-    "description" : "After Solomon's death, the nation is divided into the northern kingdom (Israel) and the southern kingdom (Judah)."
+    "book": "1 Kings",
+    "author": "Possibly Jeremiah",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "970 ~ 853 BC",
+    "description": "After Solomon's death, the nation is divided into the northern kingdom (Israel) and the southern kingdom (Judah)."
   },
-
   {
-    "book" : "2 Kings",
-    "author" : "Possibly Jeremiah",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "852 ~ 586 BC",
-    "description" : "Learn from the lessons of the Israelites' history about the consequences of unfaithfulness to God and about God's patience and faithfulness."
+    "book": "2 Kings",
+    "author": "Possibly Jeremiah",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "852 ~ 586 BC",
+    "description": "Learn from the lessons of the Israelites' history about the consequences of unfaithfulness to God and about God's patience and faithfulness."
   },
-
   {
-    "book" : "1 Chronicles",
-    "author" : "Possibly Ezra",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "1003 ~ 970 BC",
-    "description" : "The law and the prophets, like the temple, are more crucial to Israel's continuing relationship with the Lord than the presence or absence of a king; the reigns of the Davidic kings themselves being testimony."
+    "book": "1 Chronicles",
+    "author": "Possibly Ezra",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "1003 ~ 970 BC",
+    "description": "The law and the prophets, like the temple, are more crucial to Israel's continuing relationship with the Lord than the presence or absence of a king; the reigns of the Davidic kings themselves being testimony."
   },
-
   {
-    "book" : "2 Chronicles",
-    "author" : "Possibly Ezra",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "967 ~ 609 BC",
-    "description" : "The law and the prophets, like the temple, are more crucial to Israel's continuing relationship with the Lord than the presence or absence of a king; the reigns of the Davidic kings themselves being testimony."
+    "book": "2 Chronicles",
+    "author": "Possibly Ezra",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "967 ~ 609 BC",
+    "description": "The law and the prophets, like the temple, are more crucial to Israel's continuing relationship with the Lord than the presence or absence of a king; the reigns of the Davidic kings themselves being testimony."
   },
-
   {
-    "book" : "Ezra",
-    "author" : "Possibly Ezra",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "537 ~ 456 BC",
-    "description" : "A remnant of the Israelites, who had been exiled to Babylonia, return to Judah and Jerusalem to rebuild the temple under God's direction."
+    "book": "Ezra",
+    "author": "Possibly Ezra",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "537 ~ 456 BC",
+    "description": "A remnant of the Israelites, who had been exiled to Babylonia, return to Judah and Jerusalem to rebuild the temple under God's direction."
   },
-
   {
-    "book" : "Nehemiah",
-    "author" : "Possibly Ezra",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "445 ~ 432 BC",
-    "description" : "Nehemiah travels from Susa in Elam to Jerusalem in Judah to lead the Jews in rebuilding the city walls."
+    "book": "Nehemiah",
+    "author": "Possibly Ezra",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "445 ~ 432 BC",
+    "description": "Nehemiah travels from Susa in Elam to Jerusalem in Judah to lead the Jews in rebuilding the city walls."
   },
-
   {
-    "book" : "Esther",
-    "author" : "Unknown",
-    "testament" : "Old",
-    "group" : "Historical Books",
-    "timeline" : "483 ~ 472 BC",
-    "description" : "The book of Esther describes how the Jews of Persia are saved from certain destruction through divine providence."
+    "book": "Esther",
+    "author": "Unknown",
+    "testament": "Old",
+    "group": "Historical Books",
+    "timeline": "483 ~ 472 BC",
+    "description": "The book of Esther describes how the Jews of Persia are saved from certain destruction through divine providence."
   },
-
   {
-    "book" : "Job",
-    "author" : "Unknown",
-    "testament" : "Old",
-    "group" : "Wisdom Literature",
-    "timeline" : "2000 ~ 1000 BC",
-    "description" : "This wisdom book ponders the question of whether God is a God of justice in the light of life's perplexities, such as human suffering."
+    "book": "Job",
+    "author": "Unknown",
+    "testament": "Old",
+    "group": "Wisdom Literature",
+    "timeline": "2000 ~ 1000 BC",
+    "description": "This wisdom book ponders the question of whether God is a God of justice in the light of life's perplexities, such as human suffering."
   },
-
   {
-    "book" : "Psalm",
-    "author" : "David, Asaph and Others",
-    "testament" : "Old",
-    "group" : "Wisdom Literature",
-    "timeline" : "1407 ~ 586 BC",
-    "description" : "The book of Psalms contains ancient Israel's favorite hymns and prayers, which were used in their worship of God, the Great King."
+    "book": "Psalm",
+    "author": "David, Asaph and Others",
+    "testament": "Old",
+    "group": "Wisdom Literature",
+    "timeline": "1407 ~ 586 BC",
+    "description": "The book of Psalms contains ancient Israel's favorite hymns and prayers, which were used in their worship of God, the Great King."
   },
-
   {
-    "book" : "Proverbs",
-    "author" : "Solomon and other wise men",
-    "testament" : "Old",
-    "group" : "Wisdom Literature",
-    "timeline" : "About 950 BC",
-    "description" : "Proverbs describes the importance of living wisely and in the fear of the Lord as opposed to following the seductive path of folly."
+    "book": "Proverbs",
+    "author": "Solomon and other wise men",
+    "testament": "Old",
+    "group": "Wisdom Literature",
+    "timeline": "About 950 BC",
+    "description": "Proverbs describes the importance of living wisely and in the fear of the Lord as opposed to following the seductive path of folly."
   },
-
   {
-    "book" : "Ecclesiastes",
-    "author" : "Possibly Solomon",
-    "testament" : "Old",
-    "group" : "Wisdom Literature",
-    "timeline" : "About 937 BC",
-    "description" : "This wisdom teacher reveals what he has discovered about the meaninglessness of every human endeavor without God at the center of one's life."
+    "book": "Ecclesiastes",
+    "author": "Possibly Solomon",
+    "testament": "Old",
+    "group": "Wisdom Literature",
+    "timeline": "About 937 BC",
+    "description": "This wisdom teacher reveals what he has discovered about the meaninglessness of every human endeavor without God at the center of one's life."
   },
-
   {
-    "book" : "Canticles",
-    "author" : "Possibly Solomon",
-    "testament" : "Old",
-    "group" : "Wisdom Literature",
-    "timeline" : "About 950 BC",
-    "description" : "This wisdom writer celebrates the sexual union between a man and a woman as a joyful part of marital life in God's good creation."
+    "book": "Canticles",
+    "author": "Possibly Solomon",
+    "testament": "Old",
+    "group": "Wisdom Literature",
+    "timeline": "About 950 BC",
+    "description": "This wisdom writer celebrates the sexual union between a man and a woman as a joyful part of marital life in God's good creation."
   },
-
   {
-    "book" : "Isaiah",
-    "author" : "Isaiah",
-    "testament" : "Old",
-    "group" : "Major Prophets",
-    "timeline" : "739 ~ 701 BC",
-    "description" : "Isaiah predicts imminent judgment — but eventual restoration — for the people of Judah and Jerusalem."
+    "book": "Isaiah",
+    "author": "Isaiah",
+    "testament": "Old",
+    "group": "Major Prophets",
+    "timeline": "739 ~ 701 BC",
+    "description": "Isaiah predicts imminent judgment — but eventual restoration — for the people of Judah and Jerusalem."
   },
-
   {
-    "book" : "Jeremiah",
-    "author" : "Jeremiah",
-    "testament" : "Old",
-    "group" : "Major Prophets",
-    "timeline" : "627 ~ 586 BC",
-    "description" : "Jeremiah, the prophet of the new covenant, predicts Judah's Babylonian exile and ultimate restoration under the Davidic Messiah."
+    "book": "Jeremiah",
+    "author": "Jeremiah",
+    "testament": "Old",
+    "group": "Major Prophets",
+    "timeline": "627 ~ 586 BC",
+    "description": "Jeremiah, the prophet of the new covenant, predicts Judah's Babylonian exile and ultimate restoration under the Davidic Messiah."
   },
-
   {
-    "book" : "Lamentations",
-    "author" : "Probably Jeremiah",
-    "testament" : "Old",
-    "group" : "Major Prophets",
-    "timeline" : "586 BC",
-    "description" : "The prophet and his fellow Jews lament the devastation of their beloved city at the hands of the Babylonians. In the middle of the book, the theology of Lamentations reaches its apex as it focuses on the goodness of God."
+    "book": "Lamentations",
+    "author": "Probably Jeremiah",
+    "testament": "Old",
+    "group": "Major Prophets",
+    "timeline": "586 BC",
+    "description": "The prophet and his fellow Jews lament the devastation of their beloved city at the hands of the Babylonians. In the middle of the book, the theology of Lamentations reaches its apex as it focuses on the goodness of God."
   },
-
   {
-    "book" : "Ezekiel",
-    "author" : "Ezekiel",
-    "testament" : "Old",
-    "group" : "Major Prophets",
-    "timeline" : "593 ~ 573 BC",
-    "description" : "Ezekiel the priest assures his fellow Jews that God will one day return them to Jerusalem and restore the temple."
+    "book": "Ezekiel",
+    "author": "Ezekiel",
+    "testament": "Old",
+    "group": "Major Prophets",
+    "timeline": "593 ~ 573 BC",
+    "description": "Ezekiel the priest assures his fellow Jews that God will one day return them to Jerusalem and restore the temple."
   },
-
   {
-    "book" : "Daniel",
-    "author" : "Daniel",
-    "testament" : "Old",
-    "group" : "Major Prophets",
-    "timeline" : "605 ~ 539 BC",
-    "description" : "The Most High God is sovereign over all human kingdoms."
+    "book": "Daniel",
+    "author": "Daniel",
+    "testament": "Old",
+    "group": "Major Prophets",
+    "timeline": "605 ~ 539 BC",
+    "description": "The Most High God is sovereign over all human kingdoms."
   },
-
   {
-    "book" : "Hosea",
-    "author" : "Hosea",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "753 BC",
-    "description" : "Hosea proclaims God's compassion and covenant love that cannot let Israel go."
+    "book": "Hosea",
+    "author": "Hosea",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "753 BC",
+    "description": "Hosea proclaims God's compassion and covenant love that cannot let Israel go."
   },
-
   {
-    "book" : "Joel",
-    "author" : "Joel",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "835 BC",
-    "description" : "Restoration and blessing will come to the people of Judah only after judgment and repentance."
+    "book": "Joel",
+    "author": "Joel",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "835 BC",
+    "description": "Restoration and blessing will come to the people of Judah only after judgment and repentance."
   },
-
   {
-    "book" : "Amos",
-    "author" : "Amos",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "766 BC",
-    "description" : "The prophet Amos calls for social justice as the indispensable expression of true piety."
+    "book": "Amos",
+    "author": "Amos",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "766 BC",
+    "description": "The prophet Amos calls for social justice as the indispensable expression of true piety."
   },
-
   {
-    "book" : "Obadiah",
-    "author" : "Obadiah",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "853 BC",
-    "description" : "Obadiah prophesies judgment against the proud Edomites, who are gloating over Jerusalem's devastation by foreign powers."
+    "book": "Obadiah",
+    "author": "Obadiah",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "853 BC",
+    "description": "Obadiah prophesies judgment against the proud Edomites, who are gloating over Jerusalem's devastation by foreign powers."
   },
-
   {
-    "book" : "Jonah",
-    "author" : "Unknown",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "760 BC",
-    "description" : "In this story of God's loving concern for all people, the stubbornly reluctant Jonah represents Israel's jealousy of its favored relationship with God and its unwillingness to share the Lord's compassion with the nations."
+    "book": "Jonah",
+    "author": "Unknown",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "760 BC",
+    "description": "In this story of God's loving concern for all people, the stubbornly reluctant Jonah represents Israel's jealousy of its favored relationship with God and its unwillingness to share the Lord's compassion with the nations."
   },
-
   {
-    "book" : "Micah",
-    "author" : "Micah",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "735 BC",
-    "description" : "Micah's message alternates between prophecies of doom and prophecies of hope; the theme is divine judgment and deliverance."
+    "book": "Micah",
+    "author": "Micah",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "735 BC",
+    "description": "Micah's message alternates between prophecies of doom and prophecies of hope; the theme is divine judgment and deliverance."
   },
-
   {
-    "book" : "Nahum",
-    "author" : "Nahum",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "697 BC",
-    "description" : "Nahum predicts the Lord's judgment on Nineveh for her oppression, cruelty, idolatry and wickedness."
+    "book": "Nahum",
+    "author": "Nahum",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "697 BC",
+    "description": "Nahum predicts the Lord's judgment on Nineveh for her oppression, cruelty, idolatry and wickedness."
   },
-
   {
-    "book" : "Habakkuk",
-    "author" : "Habakkuk",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "625 BC",
-    "description" : "The prophet Habakkuk argues with God over God's ways, which appear to him unfathomable, if not unjust; after receiving replies from God, Habakkuk responds with a beautiful confession of faith."
+    "book": "Habakkuk",
+    "author": "Habakkuk",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "625 BC",
+    "description": "The prophet Habakkuk argues with God over God's ways, which appear to him unfathomable, if not unjust; after receiving replies from God, Habakkuk responds with a beautiful confession of faith."
   },
-
   {
-    "book" : "Zephaniah",
-    "author" : "Zephaniah",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "638 BC",
-    "description" : "The prophet Zephaniah predicts the coming of the day of the Lord, when God will severely punish the nations, including apostate Judah, but will yet be merciful to his people."
+    "book": "Zephaniah",
+    "author": "Zephaniah",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "638 BC",
+    "description": "The prophet Zephaniah predicts the coming of the day of the Lord, when God will severely punish the nations, including apostate Judah, but will yet be merciful to his people."
   },
-
   {
-    "book" : "Haggai",
-    "author" : "Haggai",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "520 BC",
-    "description" : "The prophet Haggai calls the complacent people of Judah to resume the rebuilding of the temple and in that way give glory to God."
+    "book": "Haggai",
+    "author": "Haggai",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "520 BC",
+    "description": "The prophet Haggai calls the complacent people of Judah to resume the rebuilding of the temple and in that way give glory to God."
   },
-
   {
-    "book" : "Zechariah",
-    "author" : "Zechariah",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "520 BC",
-    "description" : "The prophet Zechariah rebukes and encourages the discouraged exiles who have returned to Jerusalem from Babylonia to complete the rebuilding of the temple."
+    "book": "Zechariah",
+    "author": "Zechariah",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "520 BC",
+    "description": "The prophet Zechariah rebukes and encourages the discouraged exiles who have returned to Jerusalem from Babylonia to complete the rebuilding of the temple."
   },
-
   {
-    "book" : "Malachi",
-    "author" : "Malachi",
-    "testament" : "Old",
-    "group" : "Minor Prophets",
-    "timeline" : "430 BC",
-    "description" : "The prophet Malachi assures the postexilic Jewish community that the Messianic King will come not only to judge his people but also to bless and restore them."
+    "book": "Malachi",
+    "author": "Malachi",
+    "testament": "Old",
+    "group": "Minor Prophets",
+    "timeline": "430 BC",
+    "description": "The prophet Malachi assures the postexilic Jewish community that the Messianic King will come not only to judge his people but also to bless and restore them."
   },
-
   {
-    "book" : "Acts",
-    "author" : "Luke",
-    "testament" : "New",
-    "group" : "Historical Books",
-    "timeline" : "About 63 AC or later",
-    "description" : "Luke shows how the gospel spread rapidly from Jerusalem to the whole Roman Empire, and from its Jewish roots to the Gentile world."
+    "book": "Acts",
+    "author": "Luke",
+    "testament": "New",
+    "group": "Historical Books",
+    "timeline": "About 63 AC or later",
+    "description": "Luke shows how the gospel spread rapidly from Jerusalem to the whole Roman Empire, and from its Jewish roots to the Gentile world."
   }
 ]

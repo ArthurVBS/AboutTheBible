@@ -5,11 +5,11 @@ export default function MenuDropdown(props) {
   const jsonBooksData = require('../../Books.json')
   const [menuOpen, setMenuOpen] = useState(false)
 
-  function handleClickBooks(title, author, testament, group, timeline, paragraph){
-    props.setBookInfo({title : title, author : author, testament : testament, group : group, timeline : timeline, paragraph : paragraph})
+  function handleClickBooks(title, author, testament, group, timeline, paragraph) {
+    props.setBookInfo({ title: title, author: author, testament: testament, group: group, timeline: timeline, paragraph: paragraph })
   }
 
-  return(
+  return (
     <StyledContainer>
       <StyledToggle isOpen={menuOpen} onClick={() => (setMenuOpen(!menuOpen))}>
         <span>{props.bookInfo.title}</span>

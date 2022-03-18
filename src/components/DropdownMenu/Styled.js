@@ -48,7 +48,7 @@ export const StyledMenu = styled.nav`
   width: calc(100% - 32px);
   max-width: calc(768px - (16px * 2));
   overflow-y: scroll;
-  max-height: 350px;
+  max-height: 470px;
   padding: 16px;
   border: 2px solid ${(props) => (props.theme.primaryColor)};
   border-radius: 8px;
@@ -80,12 +80,13 @@ export const StyledMenu = styled.nav`
 
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(3, 1fr);
+    max-height: 360px;
 
     ::-webkit-scrollbar {
       width: 14px;
     }
   }
-  
+
   span {
     background-color: ${(props) => (props.theme.primaryColor)};
     color: white;
@@ -97,36 +98,32 @@ export const StyledMenu = styled.nav`
     border-radius: 8px;
     margin-bottom: 8px;
     transition: all .4s;
-    
+
     &:hover{
       background-color: ${(props) => (props.theme.background)};
       border: 2px solid ${(props) => (props.theme.primaryColor)};
     }
-    
+
     @media screen and (min-width: 568px) {
       grid-column: 1/4;
     }
   }
-  
+
   button {
     background-color: ${(props) => (props.theme.neutral)};
     color: white;
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    padding: 5px;
+    padding: 8px;
     transition: all .3s;
-    
+
     ${(props) => (props.isOpen) !== true && css`
       pointer-events: none;
     `};
 
     &:hover{
       background-color: ${(props) => (props.theme.primaryColor)};
-    }
-    
-    @media screen and (min-width: 568px) {
-      padding: 7px;
     }
   }
 `

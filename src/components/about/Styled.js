@@ -31,7 +31,7 @@ export const StyledDivAboutTop = styled.div`
     text-align: justify;
     font-family: 'Arima Madurai', sans-serif;
     font-weight: 400;
-    
+
     @media screen and (min-width: 568px) {
       font-size: 1.2em;
     }
@@ -64,9 +64,11 @@ export const StyledCardAboutTop = styled.div`
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 100px);
+  max-width: 1080px;
   gap: 16px;
   padding: 16px;
-  
+  margin: 0 auto;
+
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -89,7 +91,7 @@ padding: 16px;
 @media screen and (min-width: 568px) {
   grid-template-columns: repeat(2, 1fr);
   }
-  
+
   @media screen and (min-width: 920px) {
     padding: 32px;
   }
@@ -105,11 +107,11 @@ export const StyledCardAboutBottom = styled.div`
   border-top: 2px solid ${(props) => (props.theme.primaryColor)};
   border-bottom: 2px solid ${(props) => (props.theme.primaryColor)};
   transition: all .4s;
-  
+
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   &:hover{
     border-top: 2px solid ${(props) => (props.theme.secondaryColor)};
     border-bottom: 2px solid ${(props) => (props.theme.secondaryColor)};
@@ -130,14 +132,14 @@ export const StyledButtonAbout = styled.button`
   border-radius: 8px;
   padding: 12px 16px;
   transition: all .4s;
-  
+
   &:hover{
     border: 2px solid ${(props) => (props.theme.secondaryColor)};
   }
-  
+
   ${(props) => (props.variant === 'selected' && css`
     background-color: ${(props) => (props.theme.primaryColor)};
-  
+
     &:hover{
       color: ${(props) => (props.theme.background)};
       background-color: ${(props) => (props.theme.secondaryColor)};

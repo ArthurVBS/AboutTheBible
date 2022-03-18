@@ -7,7 +7,7 @@ export default function Header(props) {
     <>
       <StyledHeader id='header' isOpen={props.sidebarOpen}>
         <img className='logo' src={logo} alt='Logo' />
-        
+
         <StyledButtonToggle onClick={() => {
           window.scrollTo(0, 0)
           props.setSidebarOpen(!props.sidebarOpen)

@@ -32,7 +32,7 @@ export default createGlobalStyle`
   }
 
   *::-webkit-scrollbar-thumb:active {
-    background-color: #808080;
+    background-color: #909090;
   }
 
   html{
