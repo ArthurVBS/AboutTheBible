@@ -17,6 +17,8 @@ export default function Main(props) {
   }
 
   return (
-    setMainSection(props.showContainer)
+    <main>
+      {setMainSection(props.showContainer)}
+    </main>
   )
 }

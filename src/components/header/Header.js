@@ -1,12 +1,11 @@
 import Sidebar from '../Sidebar/Sidebar'
-import logo from '../../assets/logo.png'
 import { StyledHeader, StyledButtonToggle } from './Styled'
 
 export default function Header(props) {
   return (
     <>
       <StyledHeader id='header' isOpen={props.sidebarOpen}>
-        <img className='logo' src={logo} alt='Logo' />
+        <h1 style={{color: '#7244DD'}}><i className="fas fa-book-reader"></i> The Bible</h1>
 
         <StyledButtonToggle onClick={() => {
           window.scrollTo(0, 0)

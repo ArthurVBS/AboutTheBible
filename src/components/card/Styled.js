@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledCard = styled.div`
-  background-color: ${(props) => (props.theme.neutral)};
+  background-color: ${(props) => (props.theme.neutral.lightGrey)};
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -12,26 +12,26 @@ export const StyledCard = styled.div`
   margin: 0 auto;
   margin-top: 24px;
 
-  border-bottom: 1px solid ${(props) => (props.color) === 'primary' ? (props.theme.primaryColor) : (props.theme.secondaryColor)};
+  border-bottom: 1px solid ${(props) => (props.color) === 'primary' ? (props.theme.color.primary) : (props.theme.color.secondary)};
 
   h2 {
-    color: white;
+    color: ${(props) => (props.theme.neutral.dark)};
     letter-spacing: 1px;
     text-align: center;
     font-weight: 500;
   }
 
   p {
-    color: #CCC;
+    color: ${(props) => (props.theme.neutral.darkGrey)};
     text-align: center;
   }
 `
 
 export const StyledDetails = styled.details`
-  background-color: ${(props) => (props.theme.neutral)};
+  background-color: ${(props) => (props.theme.neutral.lightGrey)};
 
   summary{
-    color: white;
+    color: ${(props) => (props.theme.neutral.dark)};
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -42,7 +42,7 @@ export const StyledDetails = styled.details`
     margin: 0 auto;
     transition: all .5s;
 
-    outline: 2px solid ${(props) => (props.color) === 'primary' ? (props.theme.primaryColor) : (props.theme.secondaryColor)};
+    outline: 2px solid ${(props) => (props.color) === 'primary' ? (props.theme.color.primary) : (props.theme.color.secondary)};
 
     &:hover{
       transform: translateY(-4px);
@@ -57,7 +57,7 @@ export const StyledBooksContainer = styled.div`
 `
 
 export const StyledBooks = styled.h5`
-  color: white;
+  color: ${(props) => (props.theme.neutral.dark)};
   flex-grow: 1;
   text-align: center;
   font-size: 0.7em;

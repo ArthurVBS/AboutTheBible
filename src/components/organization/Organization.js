@@ -1,5 +1,6 @@
-import { StyledSectionOrganization, StyledDivIndex, StyledSectionTestament } from './Styled'
 import Card from '../Card/Card'
+
+import { StyledSectionOrganization, StyledDivIndex, StyledSectionTestament } from './Styled'
 
 export default function Organization() {
   const jsonGroupsData = require('../../Groups.json')

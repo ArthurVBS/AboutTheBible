@@ -1,6 +1,14 @@
 export const theme = {
-  primaryColor: '#7244DD',
-  secondaryColor: '#80EE60',
-  neutral: '#202026',
-  background: '#101014'
+  color : {
+    primary : '#7244DD',
+    secondary: '#4863F7',
+  },
+
+  neutral : {
+    light : '#FEFEFE',
+    lightGrey : '#EFEFEF',
+    grey : '#CCC',
+    darkGrey : '#202026',
+    dark : '#000000'
+  }
 }

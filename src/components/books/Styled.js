@@ -4,19 +4,20 @@ export const StyledSectionBooks = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 16px;
+  padding: 16px;
 
   h1{
-    color: white;
+    color: ${(props) => (props.theme.neutral.dark)};
     font-size: 2em;
     letter-spacing: 2px;
     text-align: center;
-    padding: 24px;
   }
 `
 
 export const StyledSectionInfo = styled.section`
-  background-color: ${(props) => props.theme.neutral};
-  color: white;
+  background-color: ${(props) => props.theme.neutral.lightGrey};
+  color: ${(props) => (props.theme.neutral.dark)};
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -26,7 +27,6 @@ export const StyledSectionInfo = styled.section`
   padding: 24px;
   margin: 0 auto;
   border-radius: 32px;
-  border: 16px solid ${(props) => props.theme.background};
 
   h2{
     text-align: center;
@@ -48,7 +48,7 @@ export const StyledGridBox = styled.div`
   gap: 16px;
 
   h5{
-    background-color: ${(props) => (props.theme.background)};
+    background-color: ${(props) => (props.theme.neutral.light)};
     text-align: center;
     font-size: 1em;
     font-weight: 500;
@@ -57,11 +57,11 @@ export const StyledGridBox = styled.div`
     border-radius: 20px;
 
     &:nth-child(1) i, &:nth-child(3) i{
-      color: ${(props) => (props.theme.secondaryColor)};
+      color: ${(props) => (props.theme.color.secondary)};
     }
 
     &:nth-child(2) i, &:nth-child(4) i{
-      color: ${(props) => (props.theme.primaryColor)};
+      color: ${(props) => (props.theme.color.primary)};
     }
   }
 

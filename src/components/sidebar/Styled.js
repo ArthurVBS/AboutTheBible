@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const StyledSidebar = styled.nav`
-  background-color: ${(props) => (props.theme.neutral)};
+  background-color: ${(props) => (props.theme.neutral.light)};
   z-index: 10;
   position: fixed;
   top: 0px;
@@ -13,6 +13,7 @@ export const StyledSidebar = styled.nav`
   min-height: calc(100vh);
   gap: 16px;
   padding: 24px;
+  box-shadow: -6px 0px 8px -4px #00000040;
   border: none;
   transition: all .8s;
   transform: ${(props) => (props.isOpen === true ? 'translateX(0%)' : 'translateX(100%)')};
@@ -20,7 +21,7 @@ export const StyledSidebar = styled.nav`
   @media screen and (min-width:568px) {
     min-width: 280px;
     justify-content: space-between;
-    border-left: 1px solid #CCC;
+    border-left: 2px solid ${(props) => (props.theme.neutral.grey)};
   }
 `
 
@@ -32,19 +33,23 @@ export const StyledButtonContainer = styled.div`
 
 export const StyledButton = styled.button`
   background-color: transparent;
-  color: ${(props) => (props.isSelected === true ? '#FFF' : '#CCC')};
+  color: ${(props) => (props.theme.neutral.darkGrey)};
   cursor: pointer;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 400;
   font-family: 'Poppins', sans-serif;
   border: none;
   padding: 16px;
-  transition: all .5s;
+  transition: all .4s;
 
   ${(props) => (props.isSelected === true && css`
+    color: ${(props) => (props.theme.neutral.dark)};
+    font-weight: 500;
+
     &::before{
       content: '>';
-      color: ${props.theme.secondaryColor};
+      color: ${props.theme.color.secondary};
       margin-right: 4px;
     }
   `)};
@@ -62,7 +67,7 @@ export const StyledLinkContainer = styled.div`
 `
 
 export const StyledLink = styled.a`
-  color: white;
+  color: ${(props) => (props.theme.neutral.dark)};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +77,8 @@ export const StyledLink = styled.a`
   transition: .7s;
 
   &:hover{
-    background-color: ${(props) => (props.theme.primaryColor)};
+    background-color: ${(props) => (props.theme.color.primary)};
+    color: ${(props) => (props.theme.neutral.light)};
     border-radius: 35%;
   }
 `
