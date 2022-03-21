@@ -84,6 +84,7 @@ export const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 100px);
+  overflow-x: hidden;
   gap: 16px;
   padding: 16px;
 

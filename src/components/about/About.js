@@ -1,9 +1,15 @@
+import { useEffect } from 'react'
+import Aos from 'aos'
+
 import undrawBook from '../../assets/books.png'
 import handBible from '../../assets/hand_bible.png'
 
 import { StyledImgBooks, StyledImgHandBible, StyledButton, StyledSection, StyledCard, StyledVerse } from './Styled'
 
 export default function About(props) {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false })
+  })
 
   function handleClick() {
     window.scrollTo(0, 0)
@@ -13,7 +19,7 @@ export default function About(props) {
   return (
     <>
       <StyledSection variant="top">
-        <StyledCard variant="top" color="primary">
+        <StyledCard variant="top" color="primary" data-aos="fade-right">
           <h3>What's the <span>Holy Bible</span>?</h3>
 
           <p>The Bible is the <span>Word of God</span>, written by people inspired by God. The Bible also serves to guide us, comfort us, correct us, heal us.</p>
@@ -22,7 +28,7 @@ export default function About(props) {
 
         <StyledImgHandBible src={handBible} alt='Picture' />
 
-        <StyledVerse>
+        <StyledVerse data-aos="fade-up">
           <i className="fas fa-dove"></i>
           "Then you will know the <span>truth</span>, and the truth will set you free." - <span>John 8:32</span>
         </StyledVerse>
@@ -39,10 +45,10 @@ export default function About(props) {
         <StyledImgBooks src={undrawBook} alt='Picture' />
 
         <StyledCard variant="top" color="secondary">
-          <h3>What's the <span>Bible</span> about?</h3>
+          <h3 data-aos="fade-left">What's the <span>Bible</span> about?</h3>
 
-          <p>Essentially, the Bible is about God's plans and purposes for fellowship with people on the earth. <span>God created everything</span>, including people who are made in His image.</p>
-          <p>The Bible teaches us about God and how we can have a <span>personal relationship</span> with Him through <span>Jesus</span>.</p>
+          <p data-aos="fade-up">Essentially, the Bible is about God's plans and purposes for fellowship with people on the earth. <span>God created everything</span>, including people who are made in His image.</p>
+          <p data-aos="fade-up">The Bible teaches us about God and how we can have a <span>personal relationship</span> with Him through <span>Jesus</span>.</p>
         </StyledCard>
 
         <StyledButton onClick={() => window.scrollTo(0, 0)} variant='selected'>

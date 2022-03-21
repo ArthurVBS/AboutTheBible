@@ -1,9 +1,16 @@
+import { useEffect } from 'react'
+import Aos from 'aos'
+
 import Card from '../Card/Card'
 
 import { StyledSectionOrganization, StyledDivIndex, StyledSectionTestament } from './Styled'
 
 export default function Organization() {
   const jsonGroupsData = require('../../Groups.json')
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false })
+  })
 
   return (
     <StyledSectionOrganization>
@@ -14,7 +21,7 @@ export default function Organization() {
       </StyledDivIndex>
 
       <StyledSectionTestament id='oldTestament' color={'secondary'}>
-        <h1>Old Testament</h1>
+        <h1 data-aos="slide-right">Old Testament</h1>
 
         {jsonGroupsData['old testament'].map((value, index) => {
           return <Card key={index} testament={value.testament} name={value.group} books={value.books}>{value.description}</Card>
@@ -23,7 +30,7 @@ export default function Organization() {
       </StyledSectionTestament>
 
       <StyledSectionTestament id='newTestament' color={'primary'}>
-        <h1>New Testament</h1>
+        <h1 data-aos="slide-right">New Testament</h1>
 
         {jsonGroupsData['new testament'].map((value, index) => {
           return <Card key={index} testament={value.testament} name={value.group} books={value.books}>{value.description}</Card>

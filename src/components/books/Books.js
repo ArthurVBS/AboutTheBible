@@ -1,13 +1,20 @@
-import { useState } from 'react'
-import { StyledSectionBooks, StyledSectionInfo, StyledGridBox } from './Styled'
+import { useState, useEffect } from 'react'
+import Aos from 'aos'
+
 import DropdownMenu from '../DropdownMenu/DropdownMenu'
+
+import { StyledSectionBooks, StyledSectionInfo, StyledGridBox } from './Styled'
 
 export default function Books() {
   const [bookInfo, setBookInfo] = useState({ title: 'Book', author: 'Author', testament: '', group: 'Group', timeline: 'Timeline', paragraph: 'Description' })
 
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false })
+  })
+
   return (
     <StyledSectionBooks>
-      <h1>Choose a book</h1>
+      <h1 data-aos="fade-right">Choose a book</h1>
 
       <DropdownMenu bookInfo={bookInfo} setBookInfo={setBookInfo} />
 

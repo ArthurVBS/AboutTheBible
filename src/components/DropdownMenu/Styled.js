@@ -18,6 +18,7 @@ export const StyledToggle = styled.button`
 
   &:hover{
     background-color: ${(props) => (props.theme.color.primary)};
+    color: ${(props) => (props.theme.neutral.light)};
   }
 
   ${(props) => (props.isOpen) === true && css`
