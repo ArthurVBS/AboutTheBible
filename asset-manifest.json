@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/AboutTheBible/static/js/main.0301ac53.js",
+    "main.js": "/AboutTheBible/static/js/main.a8ebdf63.js",
     "static/media/books.png": "/AboutTheBible/static/media/books.25b4a3758ae67399bd23.png",
     "static/media/hand_bible.png": "/AboutTheBible/static/media/hand_bible.08bcc3628d149677ec40.png",
     "index.html": "/AboutTheBible/index.html",
-    "main.0301ac53.js.map": "/AboutTheBible/static/js/main.0301ac53.js.map"
+    "main.a8ebdf63.js.map": "/AboutTheBible/static/js/main.a8ebdf63.js.map"
   },
   "entrypoints": [
-    "static/js/main.0301ac53.js"
+    "static/js/main.a8ebdf63.js"
   ]
 }
