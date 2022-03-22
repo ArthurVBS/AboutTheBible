@@ -51,7 +51,7 @@ export const StyledCard = styled.div`
   ${(props) => (props.variant === 'bottom' && css`
     order: 2;
 
-    @media screen and (min-width: 568px) {
+    @media screen and (min-width: 620px) {
       grid-column: 1/3;
     }
 
@@ -88,7 +88,7 @@ export const StyledSection = styled.section`
   gap: 16px;
   padding: 16px;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 620px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px
   }
@@ -130,7 +130,7 @@ export const StyledVerse = styled.article`
     margin-right: 8px;
   }
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 620px) {
     grid-column: 1/3;
   }
 `
@@ -172,7 +172,7 @@ export const StyledImgHandBible = styled.img`
   width: 280px;
   margin: 0 auto;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 620px) {
     width: 320px;
   }
 
@@ -187,7 +187,7 @@ export const StyledImgBooks = styled.img`
   border: 8px solid transparent;
   order: 1;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 620px) {
     order: -1;
     width: 240px;
   }

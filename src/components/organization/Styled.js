@@ -1,13 +1,7 @@
 import styled from 'styled-components'
 
-export const StyledSectionOrganization = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`
-
 export const StyledSectionTestament = styled.section`
-  border-top: 1px solid ${(props) => (props.theme.neutral.lightGrey)};
+  border-top: 2px solid ${(props) => (props.theme.neutral.lightGrey)};
   padding: 24px;
 
   h1{
@@ -26,7 +20,7 @@ export const StyledSectionTestament = styled.section`
   }
 `
 
-export const StyledDivIndex = styled.div`
+export const StyledIndex = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const StyledSidebar = styled.nav`
   background-color: ${(props) => (props.theme.neutral.light)};
@@ -18,7 +18,8 @@ export const StyledSidebar = styled.nav`
   transition: all .8s;
   transform: ${(props) => (props.isOpen === true ? 'translateX(0%)' : 'translateX(100%)')};
 
-  @media screen and (min-width:568px) {
+  @media screen and (min-width: 768px) {
+    transform: translateX(100%);
     min-width: 280px;
     justify-content: space-between;
     border-left: 2px solid ${(props) => (props.theme.neutral.grey)};
@@ -43,16 +44,16 @@ export const StyledButton = styled.button`
   padding: 16px;
   transition: all .4s;
 
-  ${(props) => (props.isSelected === true && css`
+  &.selected{
     color: ${(props) => (props.theme.neutral.dark)};
     font-weight: 500;
+  }
 
-    &::before{
-      content: '>';
-      color: ${props.theme.color.secondary};
-      margin-right: 4px;
-    }
-  `)};
+  &.selected::before{
+    content: '>';
+    color: ${(props) => (props.theme.color.secondary)};
+    margin-right: 4px;
+  }
 
   &:hover{
     transform: translateX(8px);

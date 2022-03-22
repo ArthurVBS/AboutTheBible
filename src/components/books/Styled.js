@@ -1,18 +1,11 @@
 import styled from 'styled-components'
 
-export const StyledSectionBooks = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
+export const StyledTitle = styled.h1`
+  color: ${(props) => (props.theme.neutral.dark)};
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-align: center;
   padding: 16px;
-
-  h1{
-    color: ${(props) => (props.theme.neutral.dark)};
-    font-size: 2em;
-    letter-spacing: 2px;
-    text-align: center;
-  }
 `
 
 export const StyledSectionInfo = styled.section`
@@ -25,7 +18,7 @@ export const StyledSectionInfo = styled.section`
   width: 100%;
   max-width: 768px;
   padding: 24px;
-  margin: 0 auto;
+  margin: 24px auto;
   border-radius: 32px;
 
   h2{
@@ -65,7 +58,7 @@ export const StyledGridBox = styled.div`
     }
   }
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 620px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `

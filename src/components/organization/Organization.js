@@ -3,7 +3,7 @@ import Aos from 'aos'
 
 import Card from '../Card/Card'
 
-import { StyledSectionOrganization, StyledDivIndex, StyledSectionTestament } from './Styled'
+import { StyledIndex, StyledSectionTestament } from './Styled'
 
 export default function Organization() {
   const jsonGroupsData = require('../../Groups.json')
@@ -13,12 +13,12 @@ export default function Organization() {
   })
 
   return (
-    <StyledSectionOrganization>
-      <StyledDivIndex>
+    <>
+      <StyledIndex>
         <a href='#oldTestament'><span>Old</span> Testament</a>
         <span>|</span>
         <a href='#newTestament'><span>New</span> Testament</a>
-      </StyledDivIndex>
+      </StyledIndex>
 
       <StyledSectionTestament id='oldTestament' color={'secondary'}>
         <h1 data-aos="slide-right">Old Testament</h1>
@@ -37,6 +37,6 @@ export default function Organization() {
         })}
 
       </StyledSectionTestament>
-    </StyledSectionOrganization>
+    </>
   )
 }

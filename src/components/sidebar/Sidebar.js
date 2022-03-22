@@ -1,31 +1,23 @@
-import { useState } from 'react'
 import { StyledSidebar, StyledButtonContainer, StyledButton, StyledLinkContainer, StyledLink } from './Styled'
 
 export default function Sidebar(props) {
-  const [buttons, setButtons] = useState({ 'about': true, 'organization': false, 'books': false })
-
-  function handleClick(name) {
+  function handleClick(name){
     props.setShowContainer(name)
 
-    if (name === 'about') {
-      setButtons({ 'about': true, 'organization': false, 'books': false })
-    }
-    else if (name === 'organization') {
-      setButtons({ 'about': false, 'organization': true, 'books': false })
-    }
-    else if (name === 'books') {
-      setButtons({ 'about': false, 'organization': false, 'books': true })
-    }
+    document.querySelectorAll('.button').forEach((element) => {
+      element.classList.remove('selected')
+    })
+    document.querySelector(`.${name}`).classList.add('selected')
   }
 
   return (
     <StyledSidebar isOpen={props.sidebarOpen} onClick={() => { props.setSidebarOpen(!props.sidebarOpen) }}>
       <StyledButtonContainer>
-        <StyledButton isSelected={buttons.about} onClick={() => handleClick('about')}>About</StyledButton>
+        <StyledButton onClick={() => handleClick('about')} className='button about selected'>About</StyledButton>
 
-        <StyledButton isSelected={buttons.organization} onClick={() => handleClick('organization')}>Organization</StyledButton>
+        <StyledButton onClick={() => handleClick('organization')} className='button organization'>Organization</StyledButton>
 
-        <StyledButton isSelected={buttons.books} onClick={() => handleClick('books')}>Books</StyledButton>
+        <StyledButton onClick={() => handleClick('books')} className='button books'>Books</StyledButton>
       </StyledButtonContainer>
 
       <StyledLinkContainer>

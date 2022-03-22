@@ -3,7 +3,7 @@ import Aos from 'aos'
 
 import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
-import { StyledSectionBooks, StyledSectionInfo, StyledGridBox } from './Styled'
+import { StyledTitle, StyledSectionInfo, StyledGridBox } from './Styled'
 
 export default function Books() {
   const [bookInfo, setBookInfo] = useState({ title: 'Book', author: 'Author', testament: '', group: 'Group', timeline: 'Timeline', paragraph: 'Description' })
@@ -13,8 +13,8 @@ export default function Books() {
   })
 
   return (
-    <StyledSectionBooks>
-      <h1 data-aos="fade-right">Choose a book</h1>
+    <>
+      <StyledTitle data-aos="fade-right">Choose a book</StyledTitle>
 
       <DropdownMenu bookInfo={bookInfo} setBookInfo={setBookInfo} />
 
@@ -30,6 +30,6 @@ export default function Books() {
         </StyledGridBox>
 
       </StyledSectionInfo>
-    </StyledSectionBooks>
+    </>
   )
 }

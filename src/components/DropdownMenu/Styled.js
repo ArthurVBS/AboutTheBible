@@ -79,7 +79,7 @@ export const StyledMenu = styled.nav`
     visibility: visible;
   `};
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: 620px) {
     grid-template-columns: repeat(3, 1fr);
     max-height: 360px;
 
@@ -102,10 +102,11 @@ export const StyledMenu = styled.nav`
 
     &:hover{
       background-color: ${(props) => (props.theme.neutral.light)};
+      color: ${(props) => (props.theme.color.primary)};
       border: 2px solid ${(props) => (props.theme.color.primary)};
     }
 
-    @media screen and (min-width: 568px) {
+    @media screen and (min-width: 620px) {
       grid-column: 1/4;
     }
   }
@@ -125,6 +126,7 @@ export const StyledMenu = styled.nav`
 
     &:hover{
       background-color: ${(props) => (props.theme.color.primary)};
+      color: ${(props) => (props.theme.neutral.light)};
     }
   }
 `
