@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledTitle = styled.h1`
-  color: ${(props) => (props.theme.neutral.dark)};
+  color: ${(props) => (props.theme.contrast.primary)};
   font-size: 2em;
   letter-spacing: 2px;
   text-align: center;
@@ -9,8 +9,8 @@ export const StyledTitle = styled.h1`
 `
 
 export const StyledSectionInfo = styled.section`
-  background-color: ${(props) => props.theme.neutral.lightGrey};
-  color: ${(props) => (props.theme.neutral.dark)};
+  background-color: ${(props) => props.theme.main.secondary};
+  color: ${(props) => (props.theme.contrast.primary)};
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -19,6 +19,8 @@ export const StyledSectionInfo = styled.section`
   max-width: 768px;
   padding: 24px;
   margin: 24px auto;
+  border-right: 8px solid ${(props) => (props.theme.main.primary)};
+  border-left: 8px solid ${(props) => (props.theme.main.primary)};
   border-radius: 32px;
 
   h2{
@@ -41,7 +43,7 @@ export const StyledGridBox = styled.div`
   gap: 16px;
 
   h5{
-    background-color: ${(props) => (props.theme.neutral.light)};
+    background-color: ${(props) => (props.theme.main.primary)};
     text-align: center;
     font-size: 1em;
     font-weight: 500;
@@ -58,7 +60,7 @@ export const StyledGridBox = styled.div`
     }
   }
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `

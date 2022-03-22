@@ -10,7 +10,7 @@ export default createGlobalStyle`
     text-decoration: none;
     box-sizing: border-box;
     scrollbar-width: auto;
-    scrollbar-color: ${(props) => (props.theme.color.primary)} ${(props) => (props.theme.neutral.lightGrey)};
+    scrollbar-color: ${(props) => (props.theme.color.primary)} ${(props) => (props.theme.main.secondary)};
   }
 
   *::-webkit-scrollbar {
@@ -18,13 +18,13 @@ export default createGlobalStyle`
   }
 
   *::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
-    background: ${(props) => (props.theme.neutral.lightGrey)};
+    background: ${(props) => (props.theme.main.secondary)};
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: ${(props) => (props.theme.color.primary)};
     border-radius: 8px;
-    border: 4px solid ${(props) => (props.theme.neutral.lightGrey)};
+    border: 4px solid ${(props) => (props.theme.main.secondary)};
   }
 
   *::-webkit-scrollbar-thumb:hover {
@@ -40,7 +40,7 @@ export default createGlobalStyle`
   }
 
   body{
-    background-color: ${(props) => props.theme.neutral.light};
+    background-color: ${(props) => props.theme.main.primary};
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
   }

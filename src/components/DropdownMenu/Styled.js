@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 
 export const StyledToggle = styled.button`
-  background-color: ${(props) => (props.theme.neutral.light)};
-  color: ${(props) => (props.theme.neutral.dark)};
+  background-color: ${(props) => (props.theme.main.primary)};
+  color: ${(props) => (props.theme.contrast.primary)};
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@ export const StyledToggle = styled.button`
 
   &:hover{
     background-color: ${(props) => (props.theme.color.primary)};
-    color: ${(props) => (props.theme.neutral.light)};
+    color: ${(props) => (props.theme.main.primary)};
   }
 
   ${(props) => (props.isOpen) === true && css`
@@ -32,13 +32,13 @@ export const StyledContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 24px;
-  transition: all .5s;
-  border-top: 2px solid ${(props) => (props.theme.neutral.lightGrey)};
-  border-bottom: 2px solid ${(props) => (props.theme.neutral.lightGrey)};
+  transition: all .4s;
+  border-top: 2px solid ${(props) => (props.theme.main.secondary)};
+  border-bottom: 2px solid ${(props) => (props.theme.main.secondary)};
 `
 
 export const StyledMenu = styled.nav`
-  background-color: ${(props) => (props.theme.neutral.light)};
+  background-color: ${(props) => (props.theme.main.primary)};
   position: absolute;
   top: -50%;
   opacity: 0;
@@ -54,7 +54,7 @@ export const StyledMenu = styled.nav`
   border: 2px solid ${(props) => (props.theme.color.primary)};
   border-radius: 8px;
   margin: 16px;
-  transition: all .3s;
+  transition: all .4s;
 
   scrollbar-width: auto;
   scrollbar-color: ${(props) => (props.theme.color.primary)} transparent;
@@ -70,7 +70,7 @@ export const StyledMenu = styled.nav`
   ::-webkit-scrollbar-thumb {
     background-color: ${(props) => (props.theme.color.primary)};
     border-radius: 8px;
-    border: 3px solid ${(props) => (props.theme.neutral.light)};
+    border: 3px solid ${(props) => (props.theme.main.primary)};
   }
 
   ${(props) => (props.isOpen) === true && css`
@@ -79,7 +79,7 @@ export const StyledMenu = styled.nav`
     visibility: visible;
   `};
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
     max-height: 360px;
 
@@ -90,7 +90,7 @@ export const StyledMenu = styled.nav`
 
   span {
     background-color: ${(props) => (props.theme.color.primary)};
-    color: ${(props) => (props.theme.neutral.light)};
+    color: ${(props) => (props.theme.main.primary)};
     cursor: pointer;
     text-align: center;
     grid-column: 1/3;
@@ -101,24 +101,24 @@ export const StyledMenu = styled.nav`
     transition: all .4s;
 
     &:hover{
-      background-color: ${(props) => (props.theme.neutral.light)};
+      background-color: ${(props) => (props.theme.main.primary)};
       color: ${(props) => (props.theme.color.primary)};
       border: 2px solid ${(props) => (props.theme.color.primary)};
     }
 
-    @media screen and (min-width: 620px) {
+    @media screen and (min-width: 768px) {
       grid-column: 1/4;
     }
   }
 
   button {
-    background-color: ${(props) => (props.theme.neutral.lightGrey)};
-    color: ${(props) => (props.theme.neutral.dark)};
+    background-color: ${(props) => (props.theme.main.secondary)};
+    color: ${(props) => (props.theme.contrast.primary)};
     cursor: pointer;
     border: none;
     border-radius: 4px;
     padding: 8px;
-    transition: all .3s;
+    transition: all .4s;
 
     ${(props) => (props.isOpen) !== true && css`
       pointer-events: none;
@@ -126,7 +126,7 @@ export const StyledMenu = styled.nav`
 
     &:hover{
       background-color: ${(props) => (props.theme.color.primary)};
-      color: ${(props) => (props.theme.neutral.light)};
+      color: ${(props) => (props.theme.main.primary)};
     }
   }
 `

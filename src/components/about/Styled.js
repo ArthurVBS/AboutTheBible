@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const StyledCard = styled.div`
   display: flex;
+  z-index: 1;
   flex-direction: column;
   justify-content: center;
   height: 100%;
@@ -9,7 +10,7 @@ export const StyledCard = styled.div`
   padding: 16px;
 
   h3{
-    color: ${(props) => (props.theme.neutral.dark)};
+    color: ${(props) => (props.theme.contrast.primary)};
     font-size: 1.8em;
     letter-spacing: 2px;
     text-align: center;
@@ -19,7 +20,7 @@ export const StyledCard = styled.div`
   }
 
   p{
-    color: ${(props) => (props.theme.neutral.dark)};
+    color: ${(props) => (props.theme.contrast.primary)};
     font-size: 1.2em;
     line-height: 1.7em;
     text-indent: 2em;
@@ -51,7 +52,7 @@ export const StyledCard = styled.div`
   ${(props) => (props.variant === 'bottom' && css`
     order: 2;
 
-    @media screen and (min-width: 620px) {
+    @media screen and (min-width: 768px) {
       grid-column: 1/3;
     }
 
@@ -78,7 +79,7 @@ export const StyledCard = styled.div`
 `
 
 export const StyledSection = styled.section`
-  background-color: ${(props) => (props.theme.neutral.light)};
+  background-color: ${(props) => (props.theme.main.primary)};
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -88,7 +89,7 @@ export const StyledSection = styled.section`
   gap: 16px;
   padding: 16px;
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px
   }
@@ -103,21 +104,21 @@ export const StyledSection = styled.section`
   `)}
 
   ${(props) => (props.variant === 'bottom' && css`
-    background-color: ${(props) => (props.theme.neutral.lightGrey)};
+    background-color: ${(props) => (props.theme.main.secondary)};
   `)}
 `
 
 export const StyledVerse = styled.article`
   order: 2;
-  color: ${(props) => (props.theme.neutral.dark)};
+  color: ${(props) => (props.theme.contrast.primary)};
   text-align: center;
   font-style: italic;
   font-weight: 500;
   font-size: 1.3em;
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 8px 8px 10px -4px #00000040;
-  border: 2px solid ${(props) => (props.theme.neutral.grey)};
+  box-shadow: 8px 8px 10px -4px ${(props) => (props.theme.color.shadow)};
+  border: 2px solid ${(props) => (props.theme.main.secondary)};
 
   span{
     color: ${(props) => (props.theme.color.primary)};
@@ -130,13 +131,13 @@ export const StyledVerse = styled.article`
     margin-right: 8px;
   }
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 768px) {
     grid-column: 1/3;
   }
 `
 
 export const StyledButton = styled.button`
-  background-color: ${(props) => (props.theme.neutral.lightGrey)};
+  background-color: ${(props) => (props.theme.main.primary)};
   color: ${(props) => (props.theme.color.secondary)};
   cursor: pointer;
   order: 3;
@@ -148,7 +149,7 @@ export const StyledButton = styled.button`
   font-size: 1.2em;
   border: 2px solid ${(props) => (props.theme.color.secondary)};
   border-radius: 8px;
-  box-shadow: 4px 4px 5px -2px #00000040;
+  box-shadow: 4px 4px 5px -2px ${(props) => (props.theme.color.shadow)};
   padding: 12px 16px;
   transition: all .4s;
 
@@ -158,11 +159,11 @@ export const StyledButton = styled.button`
   }
 
   ${(props) => (props.variant === 'selected' && css`
-    color: ${(props) => (props.theme.neutral.lightGrey)};
+    color: ${(props) => (props.theme.main.primary)};
     background-color: ${(props) => (props.theme.color.secondary)};
 
     &:hover{
-      color: ${(props) => (props.theme.neutral.lightGrey)};
+      color: ${(props) => (props.theme.main.secondary)};
       background-color: ${(props) => (props.theme.color.primary)};
     }
   `)}
@@ -172,7 +173,7 @@ export const StyledImgHandBible = styled.img`
   width: 280px;
   margin: 0 auto;
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 768px) {
     width: 320px;
   }
 
@@ -187,7 +188,7 @@ export const StyledImgBooks = styled.img`
   border: 8px solid transparent;
   order: 1;
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 768px) {
     order: -1;
     width: 240px;
   }

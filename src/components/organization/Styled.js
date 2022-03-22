@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const StyledSectionTestament = styled.section`
-  border-top: 2px solid ${(props) => (props.theme.neutral.lightGrey)};
+  border-top: 2px solid ${(props) => (props.theme.main.secondary)};
   padding: 24px;
 
   h1{
-    color: ${(props) => (props.theme.neutral.dark)};
+    color: ${(props) => (props.theme.contrast.primary)};
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 1.4em;
@@ -29,11 +29,11 @@ export const StyledIndex = styled.div`
   padding: 24px;
 
   a {
-    color: ${(props) => (props.theme.neutral.dark)};
+    color: ${(props) => (props.theme.contrast.primary)};
     letter-spacing: 1px;
     font-size: 1.4em;
     opacity: 0.5;
-    transition: all .5s;
+    transition: all .4s;
 
     &:hover{
       opacity: 1;
@@ -52,12 +52,12 @@ export const StyledIndex = styled.div`
     font-size: 1.8em;
 
     &:nth-child(1), &:nth-child(3){
-      color: ${(props) => (props.theme.neutral.dark)};
-      transition: all .5s;
+      color: ${(props) => (props.theme.contrast.primary)};
+      transition: all .4s;
     }
 
     &:nth-child(2){
-      color: ${(props) => (props.theme.neutral.lightGrey)};
+      color: ${(props) => (props.theme.main.secondary)};
       font-size: 2em;
     }
   }

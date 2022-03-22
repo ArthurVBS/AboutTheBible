@@ -6,18 +6,20 @@ import Footer from './components/Footer/Footer'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from './styles/globalStyles'
-import { theme } from './styles/theme'
+import { darkTheme, lightTheme } from './styles/theme'
 
 export default function App() {
   const [showContainer, setShowContainer] = useState('about')
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [isDarkTheme , setIsDarkTheme] = useState(false)
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <GlobalStyles />
       <Header
         showContainer={showContainer} setShowContainer={setShowContainer}
         sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}
+        isDarkTheme = {isDarkTheme} setIsDarkTheme={setIsDarkTheme}
       />
       <Main
         showContainer={showContainer}
