@@ -13,7 +13,7 @@ export default function Books() {
   })
 
   return (
-    <>
+    <main>
       <StyledTitle data-aos="fade-right">Choose a book</StyledTitle>
 
       <DropdownMenu bookInfo={bookInfo} setBookInfo={setBookInfo} />
@@ -30,6 +30,6 @@ export default function Books() {
         </StyledGridBox>
 
       </StyledSectionInfo>
-    </>
+    </main>
   )
 }

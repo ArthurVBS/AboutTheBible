@@ -3,7 +3,6 @@ import Organization from '../Organization/Organization'
 import Books from '../Books/Books'
 
 export default function Main(props) {
-
   function setMainSection(container) {
     if (container === 'about') {
       return <About sidebarOpen={props.sidebarOpen} setSidebarOpen={props.setSidebarOpen} />
@@ -16,9 +15,5 @@ export default function Main(props) {
     }
   }
 
-  return (
-    <main>
-      {setMainSection(props.showContainer)}
-    </main>
-  )
+  return setMainSection(props.showContainer)
 }

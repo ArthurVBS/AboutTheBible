@@ -13,7 +13,7 @@ export default function Organization() {
   })
 
   return (
-    <>
+    <main>
       <StyledIndex>
         <a href='#oldTestament'><span>Old</span> Testament</a>
         <span>|</span>
@@ -37,6 +37,6 @@ export default function Organization() {
         })}
 
       </StyledSectionTestament>
-    </>
+    </main>
   )
 }

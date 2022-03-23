@@ -9,13 +9,12 @@ export const StyledSidebar = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
   height: 100%;
   overflow: hidden;
   gap: 32px;
-  padding: 16px;
   box-shadow: -6px 0px 8px -4px ${(props) => (props.theme.color.shadow)};
   border: none;
   transition: transform .8s;
@@ -39,6 +38,7 @@ export const StyledButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 24px;
 
   @media screen and (min-width: 768px){
     flex-direction: row;
@@ -49,16 +49,17 @@ export const StyledButton = styled.button`
   background-color: transparent;
   color: ${(props) => (props.theme.contrast.secondary)};
   cursor: pointer;
+  opacity: .7;
   text-align: center;
   font-size: 1.3em;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
   border: none;
-  padding: 16px;
   transition: all .4s;
 
   &.selected{
     color: ${(props) => (props.theme.contrast.primary)};
+    opacity: 1;
     font-weight: 500;
   }
 

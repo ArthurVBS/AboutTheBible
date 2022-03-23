@@ -4,7 +4,7 @@ export const StyledHeader = styled.header`
   z-index: 12;
   position: sticky;
   right: 0;
-  background-color: ${(props) => (props.theme.main.primary)};
+  background-color: ${(props) => (props.theme.main.secondary)};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -23,15 +23,17 @@ export const StyledHeader = styled.header`
   `)}
 
   h1{
-    color: ${(props) => (props.theme.color.primary)};
-    font-size: 1.8em;
+    color: ${(props) => (props.theme.contrast.secondary)};
+    font-size: 1.6em;
 
     i{
+      color: ${(props) => (props.theme.color.silver)};
+      font-size: 1.2em;
       margin-right: 6px;
     }
 
     @media screen and (min-width: 768px) {
-      font-size: 2.2em;
+      font-size: 2em;
     }
   }
 `
@@ -59,7 +61,7 @@ export const StyledButtonToggle = styled.button`
 
 export const StyledButtonTheme = styled.button`
   background-color:  #C0C0C020;
-  color: #C0C0C0;
+  color: ${(props) => (props.theme.color.silver)};
   display: flex;
   justify-content: center;
   align-items: center;

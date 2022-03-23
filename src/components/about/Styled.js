@@ -1,11 +1,70 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
-export const StyledCard = styled.div`
+export const StyledMain = styled.main`
+  background-color: ${(props) => (props.theme.main.primary)};
   display: flex;
-  z-index: 1;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 32px 16px;
+  gap: 32px;
+`
+
+export const StyledSection = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1028px;
+  gap: 16px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 3fr 7fr;
+    border-radius: 8px;
+    border: 4px solid ${(props) => (props.theme.main.secondary)};
+  }
+`
+
+export const StyledParagraph = styled.div`
+  background-color: ${(props) => (props.theme.main.secondary)};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
   height: 100%;
+  gap: 16px;
+  padding: 16px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 0px;
+  }
+
+  p{
+    color: ${(props) => (props.theme.contrast.secondary)};
+    font-size: 1.2em;
+    line-height: 1.7em;
+    text-indent: 2em;
+    text-align: justify;
+
+    &:nth-child(1) span{
+      color: ${(props) => (props.theme.color.primary)};
+    }
+
+    &:nth-child(2) span{
+      color: ${(props) => (props.theme.color.secondary)};
+    }
+  }
+`
+
+export const StyledCard = styled.div`
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
   padding: 16px;
 
@@ -14,109 +73,37 @@ export const StyledCard = styled.div`
     font-size: 1.8em;
     letter-spacing: 2px;
     text-align: center;
-    padding: 8px 0px;
-    max-width: 1080px;
-    margin: 0 auto;
+
+    span:first-child{
+      color: ${(props) => (props.theme.color.primary)};
+    }
+
+    span:last-child{
+      color: ${(props) => (props.theme.color.secondary)};
+    }
   }
 
-  p{
-    color: ${(props) => (props.theme.contrast.primary)};
-    font-size: 1.2em;
-    line-height: 1.7em;
-    text-indent: 2em;
-    text-align: justify;
-    max-width: 1080px;
+  img{
     margin: 0 auto;
-  }
-
-  ${(props) => (props.variant === 'top' && css`
-    h3{
-      span{
-        color: ${(props) => (props.color === 'primary'
-          ? props.theme.color.primary
-          : props.theme.color.secondary
-        )};
-      }
-    }
-    p{
-      span{
-        color: ${(props) => (props.color === 'primary'
-          ? props.theme.color.secondary
-          : props.theme.color.primary
-        )};
-        font-weight: 600;
-      }
-    }
-  `)}
-
-  ${(props) => (props.variant === 'bottom' && css`
-    order: 2;
+    height: 120px;
 
     @media screen and (min-width: 768px) {
-      grid-column: 1/3;
+      height: 180px;
     }
-
-    h3{
-      span:nth-child(1){
-        color: ${(props) => (props.theme.color.primary)};
-      }
-      span:nth-child(2){
-        color: ${(props) => (props.theme.color.secondary)};
-      }
-    }
-
-    p{
-      &:nth-child(2) span{
-        color: ${(props) => (props.theme.color.primary)};
-        font-weight: 600;
-      }
-      &:nth-child(3) span{
-        color: ${(props) => (props.theme.color.secondary)};
-        font-weight: 600;
-      }
-    }
-  `)}
-`
-
-export const StyledSection = styled.section`
-  background-color: ${(props) => (props.theme.main.primary)};
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 100px);
-  overflow-x: hidden;
-  gap: 16px;
-  padding: 16px;
-
-  @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px
   }
-
-  @media screen and (min-width: 920px) {
-    padding: 32px;
-  }
-
-  ${(props) => (props.variant === 'top' && css`
-    max-width: 1080px;
-    margin: 0 auto;
-  `)}
-
-  ${(props) => (props.variant === 'bottom' && css`
-    background-color: ${(props) => (props.theme.main.secondary)};
-  `)}
 `
 
 export const StyledVerse = styled.article`
-  order: 2;
   color: ${(props) => (props.theme.contrast.primary)};
   text-align: center;
   font-style: italic;
   font-weight: 500;
   font-size: 1.3em;
+  max-width: 1028px;
+  width: 100%;
   border-radius: 8px;
   padding: 16px;
+  margin: 0 auto;
   box-shadow: 8px 8px 10px -4px ${(props) => (props.theme.color.shadow)};
   border: 2px solid ${(props) => (props.theme.main.secondary)};
 
@@ -129,71 +116,5 @@ export const StyledVerse = styled.article`
   i{
     color: ${(props) => (props.theme.color.primary)};
     margin-right: 8px;
-  }
-
-  @media screen and (min-width: 768px) {
-    grid-column: 1/3;
-  }
-`
-
-export const StyledButton = styled.button`
-  background-color: ${(props) => (props.theme.main.primary)};
-  color: ${(props) => (props.theme.color.secondary)};
-  cursor: pointer;
-  order: 3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-  letter-spacing: 1px;
-  font-size: 1.2em;
-  border: 2px solid ${(props) => (props.theme.color.secondary)};
-  border-radius: 8px;
-  box-shadow: 4px 4px 5px -2px ${(props) => (props.theme.color.shadow)};
-  padding: 12px 16px;
-  transition: all .4s;
-
-  &:hover{
-    color: ${(props) => (props.theme.color.primary)};
-    border: 2px solid ${(props) => (props.theme.color.primary)};
-  }
-
-  ${(props) => (props.variant === 'selected' && css`
-    color: ${(props) => (props.theme.main.primary)};
-    background-color: ${(props) => (props.theme.color.secondary)};
-
-    &:hover{
-      color: ${(props) => (props.theme.main.secondary)};
-      background-color: ${(props) => (props.theme.color.primary)};
-    }
-  `)}
-`
-
-export const StyledImgHandBible = styled.img`
-  width: 280px;
-  margin: 0 auto;
-
-  @media screen and (min-width: 768px) {
-    width: 320px;
-  }
-
-  @media screen and (min-width: 920px) {
-    width: 400px;
-  }
-`
-
-export const StyledImgBooks = styled.img`
-  width: 200px;
-  margin: 0 auto;
-  border: 8px solid transparent;
-  order: 1;
-
-  @media screen and (min-width: 768px) {
-    order: -1;
-    width: 240px;
-  }
-
-  @media screen and (min-width: 920px) {
-    width: 280px;
   }
 `

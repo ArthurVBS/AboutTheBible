@@ -19,10 +19,22 @@ export const StyledFooter = styled.footer`
 
 export const StyledText = styled.p`
   color: ${(props) => (props.theme.contrast.secondary)};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-weight: 500;
+  gap: 4px;
+  font-size: .9em;
+  min-height: 36px;
+  opacity: .7;
+  transition: all .4s;
 
-  span {
+  &:hover{
+    opacity: 1;
+
+  }
+
+  span{
     color: ${(props) => (props.theme.color.primary)};
     font-weight: 700;
   }
@@ -33,7 +45,7 @@ export const StyledText = styled.p`
     transition: all .4s;
 
     &:hover{
-      letter-spacing: 1px;
+      transform: translateY(-4px);
     }
   }
 `
@@ -42,23 +54,36 @@ export const StyledLinkContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 24px;
 `
 
 export const StyledLink = styled.a`
-  color: ${(props) => (props.theme.color.secondary)};
+  color: ${(props) => (props.theme.contrast.secondary)};
+  font-size: .9em;
+  opacity: .7;
+  transition: all .4s;
+
+  &:hover{
+    opacity: 1;
+  }
+`
+
+export const StyledButton = styled.a`
+  background-color: ${(props) => (props.theme.main.secondary)};
+  color: ${(props) => (props.theme.contrast.secondary)};
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4em;
-  height: 40px;
-  width: 40px;
-  transition: all .8s;
+  cursor: pointer;
+  opacity: .7;
+  font-size: 1.2em;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  transition: all .4s;
 
   &:hover{
-    background-color: ${(props) => (props.theme.color.secondary)};
-    color: ${(props) => (props.theme.main.primary)};
-    border-radius: 8px;
-    transform: rotateZ(360deg);
+    opacity: 1;
   }
 `

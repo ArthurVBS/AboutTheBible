@@ -2,7 +2,8 @@ export const darkTheme = {
   color : {
     primary : '#7244DD',
     secondary: '#4863F7',
-    shadow : '#00000080'
+    shadow : '#00000040',
+    silver : '#C0C0C0'
   },
 
   main : {
@@ -11,8 +12,8 @@ export const darkTheme = {
   },
 
   contrast : {
-    primary : '#FEFEFE',
-    secondary : '#EFEFEF'
+    primary : '#EFEFEF',
+    secondary : '#CCC'
   }
 }
 
@@ -20,7 +21,8 @@ export const lightTheme = {
   color : {
     primary : '#7244DD',
     secondary: '#4863F7',
-    shadow : '#00000080'
+    shadow : '#00000040',
+    silver : '#C0C0C0'
   },
 
   main : {
