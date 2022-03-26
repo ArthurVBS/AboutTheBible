@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
   z-index: 12;
@@ -14,27 +14,20 @@ export const StyledHeader = styled.header`
   padding: 16px;
   box-shadow: 0px 4px 8px ${(props) => (props.theme.color.shadow)};
   border-bottom: 2px solid ${(props) => (props.theme.main.secondary)};
-  transition: transform .8s;
-  ${(props) => (props.isOpen === true && css`
+`
 
-    @media screen and (min-width: 768px) {
-      transform: translateY(0px);
-    }
-  `)}
+export const StyledLogo = styled.h1`
+  color: ${(props) => (props.theme.contrast.secondary)};
+  font-size: 1.6em;
 
-  h1{
-    color: ${(props) => (props.theme.contrast.secondary)};
-    font-size: 1.6em;
+  @media screen and (min-width: 768px) {
+    font-size: 2em;
+  }
 
-    i{
-      color: ${(props) => (props.theme.color.silver)};
-      font-size: 1.2em;
-      margin-right: 6px;
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 2em;
-    }
+  i{
+    color: ${(props) => (props.theme.color.silver)};
+    font-size: 1.2em;
+    margin-right: 6px;
   }
 `
 
@@ -47,7 +40,7 @@ export const StyledButtonContainer = styled.div`
 
 export const StyledButtonToggle = styled.button`
   background-color: transparent;
-  color: ${(props) => (props.theme.color.primary)};
+  color: ${(props) => (props.theme.color.silver)};
   cursor: pointer;
   font-size: 1.4em;
   width: 48px;
@@ -60,7 +53,7 @@ export const StyledButtonToggle = styled.button`
 `
 
 export const StyledButtonTheme = styled.button`
-  background-color:  #C0C0C020;
+  background-color: #C0C0C020;
   color: ${(props) => (props.theme.color.silver)};
   display: flex;
   justify-content: center;

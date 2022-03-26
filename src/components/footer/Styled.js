@@ -20,6 +20,7 @@ export const StyledFooter = styled.footer`
 export const StyledText = styled.p`
   color: ${(props) => (props.theme.contrast.secondary)};
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;

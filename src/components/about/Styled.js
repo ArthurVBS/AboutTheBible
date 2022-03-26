@@ -85,7 +85,7 @@ export const StyledCard = styled.div`
 
   img{
     margin: 0 auto;
-    height: 120px;
+    height: 140px;
 
     @media screen and (min-width: 768px) {
       height: 180px;

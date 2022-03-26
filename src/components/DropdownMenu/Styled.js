@@ -7,7 +7,7 @@ export const StyledToggle = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1em;
+  font-size: 1em;
   letter-spacing: 1px;
   min-width: 240px;
   max-width: 280px;
@@ -31,14 +31,12 @@ export const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
   transition: all .4s;
-  border-top: 2px solid ${(props) => (props.theme.main.secondary)};
-  border-bottom: 2px solid ${(props) => (props.theme.main.secondary)};
 `
 
 export const StyledMenu = styled.nav`
   background-color: ${(props) => (props.theme.main.primary)};
+  z-index: 10;
   position: absolute;
   top: -50%;
   opacity: 0;
@@ -46,10 +44,10 @@ export const StyledMenu = styled.nav`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
-  width: calc(100% - 32px);
+  width: 100%;
   max-width: calc(768px - (16px * 2));
   overflow-y: scroll;
-  max-height: 470px;
+  max-height: 400px;
   padding: 16px;
   border: 2px solid ${(props) => (props.theme.color.primary)};
   border-radius: 8px;
@@ -58,6 +56,15 @@ export const StyledMenu = styled.nav`
 
   scrollbar-width: auto;
   scrollbar-color: ${(props) => (props.theme.color.primary)} transparent;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 300px;
+
+    ::-webkit-scrollbar {
+      width: 14px;
+    }
+  }
 
   ::-webkit-scrollbar {
     width: 10px;
@@ -78,15 +85,6 @@ export const StyledMenu = styled.nav`
     opacity: 1;
     visibility: visible;
   `};
-
-  @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-    max-height: 360px;
-
-    ::-webkit-scrollbar {
-      width: 14px;
-    }
-  }
 
   span {
     background-color: ${(props) => (props.theme.color.primary)};

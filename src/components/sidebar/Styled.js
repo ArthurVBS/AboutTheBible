@@ -57,27 +57,27 @@ export const StyledButton = styled.button`
   border: none;
   transition: all .4s;
 
-  &.selected{
-    color: ${(props) => (props.theme.contrast.primary)};
-    opacity: 1;
-    font-weight: 500;
-  }
-
-  &.selected::before{
+  &::before{
     content: '>';
-    color: ${(props) => (props.theme.color.secondary)};
+    color: transparent;
     margin-right: 4px;
   }
 
   &:hover{
+    color: ${(props) => (props.theme.contrast.primary)};
+    opacity: 1;
     transform: translateX(8px);
+  }
+
+  &:hover::before{
+    color: ${(props) => (props.theme.color.secondary)};
   }
 
   @media screen and (min-width: 768px){
     font-size: 1.2em;
 
     &:hover{
-      transform: translateY(-4px);
+      transform: translateY(-2px);
     }
   }
 `

@@ -43,18 +43,16 @@ export default function About() {
         </StyledParagraph>
       </StyledSection>
 
-
       <StyledSection data-aos="fade-up">
         <StyledCard>
           <img src={undrawSearch} alt='An art - Searching' />
-
           <h3>What<span>'</span>s the <span>Bible</span> about?</h3>
         </StyledCard>
 
         <StyledParagraph data-aos="fade-left">
           <p>Essentially, the Bible is about God's plans and purposes for fellowship with people on the earth. <span>God created everything</span>, including people who are made in His image.</p>
           <p>The Bible teaches us about God and how we can have a <span>personal relationship</span> with Him through <span>Jesus</span>.</p>
-          </StyledParagraph>
+        </StyledParagraph>
       </StyledSection>
     </StyledMain>
   )
