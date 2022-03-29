@@ -312,11 +312,219 @@
     "description": "The prophet Malachi assures the postexilic Jewish community that the Messianic King will come not only to judge his people but also to bless and restore them."
   },
   {
+    "book": "Matthew",
+    "author": "Matthew",
+    "testament": "New",
+    "group": "Gospels",
+    "timeline": "5 BC ~ 30 AC",
+    "description": "Matthew presents Jesus as the Jewish Messiah sent by God to fulfill OT prophecy."
+  },
+  {
+    "book": "Mark",
+    "author": "Mark",
+    "testament": "New",
+    "group": "Gospels",
+    "timeline": "5 BC ~ 30 AC",
+    "description": "To encourage his readers to persevere through suffering and persecution, Mark presents Jesus as the Servant-Messiah and Son of God who died as a ransom for sinners."
+  },
+  {
+    "book": "Luke",
+    "author": "Luke",
+    "testament": "New",
+    "group": "Gospels",
+    "timeline": "6 BC ~ 30 AC",
+    "description": "Luke presents Jesus as the Messiah and Lord whose life, death and resurrection make salvation available to all people everywhere."
+  },
+  {
+    "book": "John",
+    "author": "Luke",
+    "testament": "New",
+    "group": "Gospels",
+    "timeline": "5 BC ~ 30 AC",
+    "description": "John presents Jesus as the Word, the Messiah and the incarnate Son of God, who has come to reveal the Father and bring eternal life to all who believe in him."
+  },
+  {
     "book": "Acts",
     "author": "Luke",
     "testament": "New",
     "group": "Historical Books",
     "timeline": "About 63 AC or later",
     "description": "Luke shows how the gospel spread rapidly from Jerusalem to the whole Roman Empire, and from its Jewish roots to the Gentile world."
+  },
+  {
+    "book": "Romans",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 57 AC",
+    "description": "Paul writes to the church in Rome to present his basic statement of the gospel: God's plan of salvation for all peoples, Jew and Gentile alike."
+  },
+  {
+    "book": "1 Corinthians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 54 AC",
+    "description": "Paul addresses problems in the church and answers questions from the church."
+  },
+  {
+    "book": "2 Corinthians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 57 AC",
+    "description": "Paul encourages the Corinthian believers to be reconciled with him and to reject false apostles who are challenging his authority and creating dissension in the church."
+  },
+  {
+    "book": "Galatians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 54 AC",
+    "description": "Paul writes to counter the claims of legalistic Judaizers who were telling the Galatian believers that they must be circumcised and keep the law of Moses in order to be saved."
+  },
+  {
+    "book": "Ephesians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 62 AC",
+    "description": "Paul summarizes his gospel of salvation by grace through faith alone and describes the nature and role of the church in God's eternal plan."
+  },
+  {
+    "book": "Philippians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 62 AC",
+    "description": "Paul writes to encourage the Christians at Philippi to live joyfully in every circumstance."
+  },
+  {
+    "book": "Colossians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 62 AC",
+    "description": "Paul writes to demonstrate that Christ is supreme over every human philosophy and accomplishment."
+  },
+  {
+    "book": "1 Thessalonians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 51 AC",
+    "description": "Paul praises the Thessalonian believers for their spiritual maturity and perseverance, and he encourages them to further growth in view of Christ's imminent return."
+  },
+  {
+    "book": "2 Thessalonians",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 52 AC",
+    "description": "Paul writes to correct a misunderstanding concerning the Lord's return and to exhort the Thessalonian believers to be steadfast and to work for a living."
+  },
+  {
+    "book": "1 Timothy",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 63 AC",
+    "description": "Paul writes to instruct Timothy concerning the care of the church at Ephesus."
+  },
+  {
+    "book": "2 Timothy",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 67 AC",
+    "description": "Facing imminent death, Paul encourages Timothy to carry on the ministry and faithfully guard the gospel."
+  },
+  {
+    "book": "Titus",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 66 AC",
+    "description": "Paul writes to instruct Titus concerning the care of the church on the island of Crete."
+  },
+  {
+    "book": "Philemon",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 62 AC",
+    "description": "Paul urges Philemon to show grace to Onesimus, his runaway slave."
+  },
+  {
+    "book": "Hebrews",
+    "author": "Paul",
+    "testament": "New",
+    "group": "Paul's letters",
+    "timeline": "About 68 AC",
+    "description": "The author demonstrates the absolute supremacy and sufficiency of Jesus Christ as revealer and mediator of God's grace."
+  },
+  {
+    "book": "James",
+    "author": "James",
+    "testament": "New",
+    "group": "General letters",
+    "timeline": "About 45 AC",
+    "description": "James emphasizes vital Christianity characterized by good deeds and faith that works."
+  },
+  {
+    "book": "1 Peter",
+    "author": "Peter",
+    "testament": "New",
+    "group": "General letters",
+    "timeline": "About 64 AC",
+    "description": "Peter gives instructions on holy living for those suffering persecution."
+  },
+  {
+    "book": "2 Peter",
+    "author": "Peter",
+    "testament": "New",
+    "group": "General letters",
+    "timeline": "About 67 AC",
+    "description": "Peter teaches how to deal with false teachers and evildoers who have come into the church."
+  },
+  {
+    "book": "1 John",
+    "author": "John",
+    "testament": "New",
+    "group": "General letters",
+    "timeline": "About 90 AC",
+    "description": "John writes to assure believers of the certainty of their faith and to refute heretical doctrines teaching that Jesus was not fully human and fully divine."
+  },
+  {
+    "book": "2 John",
+    "author": "John",
+    "testament": "New",
+    "group": "General letters",
+    "timeline": "About 92 AC",
+    "description": "John writes to urge discernment in supporting traveling teachers, since false teachers were also traveling and teaching heresy."
+  },
+  {
+    "book": "3 John",
+    "author": "John",
+    "testament": "New",
+    "group": "General letters",
+    "timeline": "About 94 AC",
+    "description": "John writes this letter to commend Gaius for supporting traveling teachers and to rebuke Diotrephes for refusing to welcome them."
+  },
+  {
+    "book": "Jude",
+    "author": "Jude",
+    "testament": "New",
+    "group": "General letters",
+    "timeline": "About 68 AC",
+    "description": "Jude writes to warn Christians about false teachers who are trying to convince them that being saved by grace gives them license to sin."
+  },
+  {
+    "book": "Revelation",
+    "author": "John",
+    "testament": "New",
+    "group": "Apocalyptic Literature",
+    "timeline": "95 AC",
+    "description": "John writes to encourage the faithful to stand firm against persecution and compromise in the light of the imminent return of Christ to deliver the righteous and judge the wicked."
   }
 ]
