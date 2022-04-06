@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 
-export const StyledFooter = styled.footer`
-  background-color: ${(props) => (props.theme.main.primary)};
+export const Container = styled.footer`
+  background-color: ${props => props.theme.main.primary};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
   padding: 16px;
-  border-top: 2px solid ${(props) => (props.theme.main.secondary)};
-  box-shadow: 0px -4px 8px ${(props) => (props.theme.color.shadow)};
+  border-top: 2px solid ${props => props.theme.main.secondary};
+  box-shadow: 0px -4px 8px ${props => props.theme.color.shadow};
 
   @media screen and (min-width: 768px){
     flex-direction: row;
@@ -17,8 +17,8 @@ export const StyledFooter = styled.footer`
   }
 `
 
-export const StyledText = styled.p`
-  color: ${(props) => (props.theme.contrast.secondary)};
+export const Text = styled.p`
+  color: ${props => props.theme.contrast.secondary};
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,12 +36,12 @@ export const StyledText = styled.p`
   }
 
   span{
-    color: ${(props) => (props.theme.color.primary)};
+    color: ${props => props.theme.color.primary};
     font-weight: 700;
   }
 
   a {
-    color: ${(props) => (props.theme.color.secondary)};
+    color: ${props => props.theme.color.secondary};
     font-weight: 500;
     transition: all .4s;
 
@@ -51,15 +51,15 @@ export const StyledText = styled.p`
   }
 `
 
-export const StyledLinkContainer = styled.div`
+export const WrapperLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 `
 
-export const StyledLink = styled.a`
-  color: ${(props) => (props.theme.contrast.secondary)};
+export const Link = styled.a`
+  color: ${props => props.theme.contrast.secondary};
   font-size: .9em;
   opacity: .7;
   transition: all .4s;
@@ -69,9 +69,9 @@ export const StyledLink = styled.a`
   }
 `
 
-export const StyledButton = styled.a`
-  background-color: ${(props) => (props.theme.main.secondary)};
-  color: ${(props) => (props.theme.contrast.secondary)};
+export const Button = styled.a`
+  background-color: ${props => props.theme.main.secondary};
+  color: ${props => props.theme.contrast.secondary};
   display: flex;
   justify-content: center;
   align-items: center;

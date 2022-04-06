@@ -1,11 +1,13 @@
-import About from '../About/About'
-import Organization from '../Organization/Organization'
-import Books from '../Books/Books'
+import React from 'react'
+
+import About from '../About'
+import Organization from '../Organization'
+import Books from '../Books'
 
 export default function Main(props) {
-  function setMainSection(container) {
+  const setMainSection = (container) => {
     if (container === 'about') {
-      return <About sidebarOpen={props.sidebarOpen} setSidebarOpen={props.setSidebarOpen} />
+      return <About />
     }
     else if (container === 'organization') {
       return <Organization />

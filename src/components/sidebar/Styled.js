@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const StyledSidebar = styled.nav`
-  background-color: ${(props) => (props.theme.main.primary)};
+export const Container = styled.nav`
+  background-color: ${props => props.theme.main.primary};
   z-index: 15;
   position: fixed;
   top: 0px;
@@ -15,10 +15,10 @@ export const StyledSidebar = styled.nav`
   height: 100%;
   overflow: hidden;
   gap: 32px;
-  box-shadow: -6px 0px 8px -4px ${(props) => (props.theme.color.shadow)};
+  box-shadow: -6px 0px 8px -4px ${props => props.theme.color.shadow};
   border: none;
   transition: transform .8s;
-  transform: ${(props) => (props.isOpen === true ? 'translateX(0%)' : 'translateX(100%)')};
+  transform: ${props => (props.isOpen === true ? 'translateX(0%)' : 'translateX(100%)')};
 
   @media screen and (min-width: 768px) {
     background-color: transparent;
@@ -34,7 +34,7 @@ export const StyledSidebar = styled.nav`
   }
 `
 
-export const StyledButtonContainer = styled.div`
+export const WrapperButtons = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,9 +45,9 @@ export const StyledButtonContainer = styled.div`
   }
 `
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
   background-color: transparent;
-  color: ${(props) => (props.theme.contrast.secondary)};
+  color: ${props => props.theme.contrast.secondary};
   cursor: pointer;
   opacity: .7;
   text-align: center;
@@ -64,17 +64,17 @@ export const StyledButton = styled.button`
   }
 
   &:hover{
-    color: ${(props) => (props.theme.contrast.primary)};
+    color: ${props => props.theme.contrast.primary};
     opacity: 1;
     transform: translateX(8px);
   }
 
   &:hover::before{
-    color: ${(props) => (props.theme.color.secondary)};
+    color: ${props => props.theme.color.secondary};
   }
 
   @media screen and (min-width: 768px){
-    font-size: 1.2em;
+    font-size: 1.1em;
 
     &:hover{
       transform: translateY(-2px);

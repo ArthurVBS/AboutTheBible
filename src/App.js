@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
+import Header from './components/Header'
+import Main from './components/Main'
+import Footer from './components/Footer'
 
-import { ThemeProvider } from 'styled-components'
 import GlobalStyles from './styles/globalStyles'
+import { ThemeProvider } from 'styled-components'
 import { darkTheme, lightTheme } from './styles/theme'
 
 export default function App() {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledMain = styled.main`
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,17 +9,17 @@ export const StyledMain = styled.main`
   padding: 32px 16px;
 `
 
-export const StyledTitle = styled.h1`
-  color: ${(props) => (props.theme.contrast.primary)};
+export const Title = styled.h1`
+  color: ${props => props.theme.contrast.primary};
   font-size: 2em;
   letter-spacing: 2px;
   text-align: center;
   padding: 16px;
 `
 
-export const StyledSectionInfo = styled.section`
-  background-color: ${(props) => props.theme.main.secondary};
-  color: ${(props) => (props.theme.contrast.primary)};
+export const Section = styled.section`
+  background-color: ${props => props.theme.main.secondary};
+  color: ${props => props.theme.contrast.primary};
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -36,7 +36,7 @@ export const StyledSectionInfo = styled.section`
   }
 `
 
-export const StyledGridBox = styled.div`
+export const Box = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -44,7 +44,7 @@ export const StyledGridBox = styled.div`
   gap: 16px;
 
   h5{
-    background-color: ${(props) => (props.theme.main.primary)};
+    background-color: ${props => props.theme.main.primary};
     text-align: center;
     font-size: 1em;
     font-weight: 500;
@@ -53,11 +53,11 @@ export const StyledGridBox = styled.div`
     border-radius: 8px;
 
     &:nth-child(1) i, &:nth-child(3) i{
-      color: ${(props) => (props.theme.color.secondary)};
+      color: ${props => props.theme.color.secondary};
     }
 
     &:nth-child(2) i, &:nth-child(4) i{
-      color: ${(props) => (props.theme.color.primary)};
+      color: ${props => props.theme.color.primary};
     }
   }
 

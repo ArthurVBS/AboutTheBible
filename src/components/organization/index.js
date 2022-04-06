@@ -1,9 +1,8 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Aos from 'aos'
 
-import Card from '../Card/Card'
-
-import { StyledIndex, StyledSectionTestament } from './Styled'
+import Card from '../Card'
+import { Container, Index, Section } from './styled'
 
 export default function Organization() {
   const jsonGroupsData = require('../../Groups.json')
@@ -13,30 +12,28 @@ export default function Organization() {
   })
 
   return (
-    <main>
-      <StyledIndex>
+    <Container>
+      <Index>
         <a href='#oldTestament'><span>Old</span> Testament</a>
         <span>|</span>
         <a href='#newTestament'><span>New</span> Testament</a>
-      </StyledIndex>
+      </Index>
 
-      <StyledSectionTestament id='oldTestament' color={'secondary'}>
+      <Section id='oldTestament' color={'secondary'}>
         <h1 data-aos="slide-right">Old Testament</h1>
 
         {jsonGroupsData['old testament'].map((value, index) => {
           return <Card key={index} testament={value.testament} name={value.group} books={value.books}>{value.description}</Card>
         })}
+      </Section>
 
-      </StyledSectionTestament>
-
-      <StyledSectionTestament id='newTestament' color={'primary'}>
+      <Section id='newTestament' color={'primary'}>
         <h1 data-aos="slide-right">New Testament</h1>
 
         {jsonGroupsData['new testament'].map((value, index) => {
           return <Card key={index} testament={value.testament} name={value.group} books={value.books}>{value.description}</Card>
         })}
-
-      </StyledSectionTestament>
-    </main>
+      </Section>
+    </Container>
   )
 }
