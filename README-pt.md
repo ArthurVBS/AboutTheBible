@@ -38,8 +38,9 @@
 
 ## 📝 Features:
 
+- [x] Mostrar curiosidade sobre a Bíblia.
 - [x] Mostrar como a Bíblia é organizada/dividida.
-- [ ] Mostrar informações sobre os livros que compõem a Bíblia.
+- [X] Mostrar informações sobre os livros que compõem a Bíblia.
 
 ## ⚙️ Pré-requisitos:
 
