@@ -38,8 +38,9 @@
 
 ## 📝 Features:
 
-- [x] Show how the Bible is organized/divided.
-- [ ] Show information about the books that make up the Bible.
+- [x] Shows curiosity about the Bible.
+- [x] Shows how the Bible is organized/divided.
+- [x] Shows information about the books that make up the Bible.
 
 ## ⚙️ Prerequisites:
 
