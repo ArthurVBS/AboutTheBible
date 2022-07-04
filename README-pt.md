@@ -26,7 +26,7 @@
 
 ## 💻 Situação do projeto:
 
-- 🚧 Projeto em progresso... 🛠️
+- Projeto finalizado ✔️
 
 ## 🛠 Tecnologias:
 
